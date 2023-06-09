@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css" />
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Swipper JS -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Chosen CSS -->
+  <link rel="stylesheet" href="./assets/plugins/chosen/chosen.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <title>rlp-urlaub.de &#8211; Rheinland-Pfalz Urlaubsportal</title>
+</head>
+
+<body>
+
+  <!-- Page Wrapper -->
+  <div class="wrapper">
+    <!-- Navbar & Header -->
+    <header class="header position-relative">
+      <!-- Start Navbar -->
+      <div class="content--container">
+
+        <b class="screen-overlay"></b>
+        <div class="header-inner">
+          <nav class="navbar2 navbar d-lg-none navbar-expand-lg my-3">
+            <div class="content--container  d-flex justify-content-between align-items-center">
+              <a class="navbar-brand fw-bold" href="#"><img src="./assets/img/logo.png" class="img-fluid" alt="" /></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-trigger="#navbar_main"
+                aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <hr class="text-white w-100" />
+            <div class="content--container">
+              <ul class="navbar-nav navbar-nav--2 mb-2 mb-lg-0 nav--list-2">
+                <li class="nav-item" style="margin-right: 5px;">
+                  <a class="nav-link nav-link-icon text-white" href="#"><i class="fa-regular fa-heart"></i></a>
+                </li>
+                <div class="d-flex">
+                  <li class="nav-item mx-3">
+                    <a class="nav-link text-white" href="#">Einloggen</a>
+                  </li>
+                  <li class="nav-item">
+                    <button class="btn header-btn">
+                      Ferlenunterkunft vermieten
+                    </button>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </nav>
+          <div class="container-fluid p-0">
+            <nav id="navbar_main" class="navbar mobile-offcanvas navbar-expand-lg py-3">
+              <div class="container-fluid p-0">
+                <a class="navbar-brand fw-bold" href="#"><img src="./assets/img/logo.png" class="img-fluid"
+                    alt="" /></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-trigger="#navbar_main"
+                  aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                  <span><i class="fa-solid fa-close"></i></span>
+                </button>
+                <div class="navbar-collapse justify-content-end collapse show my--md--5" id="navbarSupportedContent">
+                  <ul class="navbar-nav mb-2 mb-lg-0 nav--list-1">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle navlink--margin" href="#" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Urlaubscregionen
+                      </a>
+                      <div class="dropdown-menu navlink--margin" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Ahrtal</a>
+                        <a class="dropdown-item" href="#">Eifel</a>
+                        <a class="dropdown-item" href="#">Lahn</a>
+                        <a class="dropdown-item" href="#">Hunsrück</a>
+                        <a class="dropdown-item" href="#">Lahntal</a>
+                        <a class="dropdown-item" href="#">Mittelrhein</a>
+                        <a class="dropdown-item" href="#">Mosel</a>
+                        <a class="dropdown-item" href="#">Nahe</a>
+                        <a class="dropdown-item" href="#">Pfalz</a>
+                        <a class="dropdown-item" href="#">Rheinhessen</a>
+                        <a class="dropdown-item" href="#">Westerwald</a>
+                      </div>
+                    </li>
+                    <li class="nav-item navlink--margin">
+                      <a class="nav-link" href="#">Last-Minute</a>
+                    </li>
+
+                    <li class="nav-item navlink--margin">
+                      <a class="nav-link" href="#">Magazin</a>
+                    </li>
+                  </ul>
+                  <hr class="text-white nav-seprater" />
+                  <ul class="navbar-nav mb-2 mb-lg-0 nav--list-2 d-none d-lg-flex">
+                    <li class="nav-item navlink--margin">
+                      <a class="nav-link nav-link-icon" href="#"><i class="fa-regular fa-heart"></i></a>
+                    </li>
+                    <li class="nav-item navlink--margin">
+                      <a class="nav-link" href="#">Einloggen</a>
+                    </li>
+                    <li class="nav-item navlink--margin--l">
+                      <button class="btn header-btn">
+                        Ferlenunterkunft vermieten
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-content px-lg-5 wrapper-1s" style="
+            background-image: url(./assets/img/region-header-img.png);
+          ">
+        <h1 class="header--heading">Dein Urlaub in der Eifel</h1>
+
+        <form action="" class="position-relative mt-3">
+          <div class="header--form"></div>
+          <div class="header--main-search-Input">
+            <div class="header--main--items">
+              <div class="main-search-input-item">
+                <div class="main-search-input-item-content" style="padding-left: 0px">
+                  <input type="text" class="header--Input" placeholder="What are you looking for?" />
+                </div>
+              </div>
+              <div class="main-search-input-item">
+                <div class="main-search-input-item-content">
+                  <select class="chosen-select">
+                    <option value="">Alle Unterkünfte</option>
+                    <option value="baumzelt">Baumzelt</option>
+                    <option value="doppelzimmer">Doppelzimmer</option>
+                    <option value="einzelzimmer">Einzelzimmer</option>
+                    <option value="ferienhaus">Ferienhaus</option>
+                    <option value="glampingzelt">Glampingzelt</option>
+                    <option value="ferienwohnung">Ferienwohnung</option>
+                    <option value="hotelzimmer">Hotelzimmer</option>
+                    <option value="mehrbettzimmer">Mehrbettzimmer</option>
+                    <option value="privatzimmer">Privatzimmer</option>
+                    <option value="suite">Suite</option>
+                    <option value="tiny-house">Tiny-House</option>
+                    <option value="wohmobilstellplatz">
+                      wohmobilstellplatz
+                    </option>
+                    <option value="zelt">Zelt</option>
+                    <option value="zelt-stellplatz">Zelt-Stellplatz</option>
+                  </select>
+                </div>
+              </div>
+              <div class="main-search-input-item">
+                <div class="main-search-input-item-content">
+                  <select class="chosen-select">
+                    <option value="">Alle Gäste</option>
+                    <option value="gäste1">Gäste 1</option>
+                    <option value="gäste2">Gäste 2</option>
+                    <option value="gäste3">Gäste 3</option>
+                    <option value="gäste4">Gäste 4</option>
+                    <option value="gäste5">Gäste 5</option>
+                    <option value="gäste6">Gäste 6</option>
+                    <option value="gäste7">Gäste 7</option>
+                    <option value="gäste8">Gäste 8</option>
+                    <option value="gäste9">Gäste 9</option>
+                    <option value="gäste10">Gäste 10</option>
+                  </select>
+                </div>
+              </div>
+              <div class="main-search-input-item">
+                <div class="main-search-input-item-content" style="border-color: transparent">
+                  <span>An- und Abreise</span>
+                </div>
+              </div>
+              <button class="header--form--btn">
+                <img src="./assets/img/icon/search.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- </div> -->
+      <!-- End Navbar -->
+    </header>
+
+    <!-- Start Category Section -->
+    <section class="category position-relative" style="background: transparent">
+      <div class="back-shadow"></div>
+      <div class="content--container">
+        <h2 class="main-heading">Tiefer in die Eifel</h2>
+
+        <div class="region--category--box--container">
+          <div class="region-category--box">
+            <a href="#">
+              <img src="./assets/img/region--category/region-category-1.png" alt="" />
+              <span class="category--box--text">Eifel</span>
+            </a>
+          </div>
+          <div class="region-category--box">
+            <a href="#">
+              <img src="./assets/img/region--category/region-category-2.png" alt="" />
+              <span class="category--box--text">Ahrtal</span>
+            </a>
+          </div>
+          <div class="region-category--box">
+            <a href="#">
+              <img src="./assets/img/region--category/region-category-3.png" alt="" />
+              <span class="category--box--text">Hunsrück</span>
+            </a>
+          </div>
+        </div>
+        <div class="region--category--box--container">
+          <div class="region-category--box">
+            <a href="#">
+              <img src="./assets/img/region--category/region-category-1.png" alt="" />
+              <span class="category--box--text">Mittelrhein</span>
+            </a>
+          </div>
+          <div class="region-category--box">
+            <a href="#">
+              <img src="./assets/img/region--category/region-category-2.png" alt="" />
+              <span class="category--box--text">Mosel</span>
+            </a>
+          </div>
+          <div class="region-category--box">
+            <a href="#">
+              <img src="./assets/img/region--category/region-category-3.png" alt="" />
+              <span class="category--box--text">Pfalz</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Category Section -->
+
+    <!-- Start listing Items Section -->
+    <section class="content--container listing-section position-relative" style="padding: 80px 0px 40px 0px">
+      <div class="back-shadow-1"></div>
+      <h2 class="main-heading">Top Unterkünfte auf RLP Urlaub</h2>
+      <div class="swiper mySwiper" style="padding-bottom: 40px !important">
+        <div class="swiper-wrapper">
+          <div class="listing--item--card swiper-slide">
+            <div class="listing--img--container">
+              <img src="./assets/img/listing/listing-1.png" alt="" />
+              <span class="top-image"><img src="./assets/img/listing/top-element.png" alt="" /></span>
+              <span class="top-text">Top</span>
+            </div>
+            <div class="listing--text--container mx-4 my-3">
+              <div class="listing--name--container">
+                <span class="listing--name">Ferienhaus RLP</span>
+                <span class="listing--icon"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="listing--details--container">
+                <div>
+                  <i class="fa-solid fa-location-dot listing-detail-icon"></i>
+                  <span class="listing-detail">Böhl-Iggelheim</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-house listing-detail-icon"></i>
+                  <span class="listing-detail mx-2">60 m²</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-users listing-detail-icon"></i>
+                  <span class="listing-detail mx-2">3</span>
+                </div>
+              </div>
+              <div class="listing--price--container mt-3 mb-5 pb-3">
+                <div>
+                  <span class="price--tags--green">150 Euro</span>
+                  <span class="price--tags--grey">/ Night</span>
+                </div>
+                <div>
+                  <a href="#" class="price--tags-btn">
+                    Jetzt buchen
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="listing--item--card swiper-slide">
+            <div class="listing--img--container">
+              <img src="./assets/img/listing/listing-2.png" alt="" />
+              <span class="top-image"><img src="./assets/img/listing/top-element.png" alt="" /></span>
+              <span class="top-text">Top</span>
+            </div>
+            <div class="listing--text--container mx-4 my-3">
+              <div class="listing--name--container">
+                <span class="listing--name">Test Titel Test TitelTest TitelTest TitelTest
+                  TitelTe...</span>
+                <span class="listing--icon"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="listing--details--container">
+                <div>
+                  <i class="fa-solid fa-location-dot listing-detail-icon"></i>
+                  <span class="listing-detail">Böhl-Iggelheim</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-house listing-detail-icon"></i>
+                  <span class="listing-detail mx-2">60 m²</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-users listing-detail-icon"></i>
+                  <span class="listing-detail mx-2">3</span>
+                </div>
+              </div>
+              <div class="listing--price--container mt-3 mb-5 pb-3">
+                <div>
+                  <span class="price--tags--green">299 Euro</span>
+                  <span class="price--tags--grey">/ Night</span>
+                </div>
+                <div>
+                  <a href="#" class="price--tags-btn">
+                    Jetzt buchen
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="listing--item--card swiper-slide">
+            <div class="listing--img--container">
+              <img src="./assets/img/listing/listing-3.png" alt="" />
+              <span class="top-image"><img src="./assets/img/listing/top-element.png" alt="" /></span>
+              <span class="top-text">Top</span>
+            </div>
+            <div class="listing--text--container mx-4 my-3">
+              <div class="listing--name--container">
+                <span class="listing--name">Ferienhaus RLP #APJK67QB SCHÖNER ...</span>
+                <span class="listing--icon"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="listing--details--container">
+                <div>
+                  <i class="fa-solid fa-location-dot listing-detail-icon"></i>
+                  <span class="listing-detail">Böhl-Iggelheim</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-house listing-detail-icon"></i>
+                  <span class="listing-detail mx-2">60 m²</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-users listing-detail-icon"></i>
+                  <span class="listing-detail mx-2">3</span>
+                </div>
+              </div>
+              <div class="listing--price--container mt-3 mb-5 pb-3">
+                <div>
+                  <span class="price--tags--green">299 Euro</span>
+                  <span class="price--tags--grey">/ Night</span>
+                </div>
+                <div>
+                  <a href="#" class="price--tags-btn">
+                    Jetzt buchen
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="listing--item--card swiper-slide">
+            <div class="listing--img--container">
+              <img src="./assets/img/listing/listing-1.png" alt="" />
+              <span class="top-image"><img src="./assets/img/listing/top-element.png" alt="" /></span>
+              <span class="top-text">Top</span>
+            </div>
+            <div class="listing--text--container mx-4 my-3">
+              <div class="listing--name--container">
+                <span class="listing--name">Ferienhaus RLP</span>
+                <span class="listing--icon"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="listing--details--container">
+                <div>
+                  <i class="fa-solid fa-location-dot listing-detail-icon"></i>
+                  <span class="listing-detail">Böhl-Iggelheim</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-house listing-detail-icon"></i>
+                  <span class="listing-detail mx-2">60 m²</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-users listing-detail-icon"></i>
+                  <span class="listing-detail mx-2">3</span>
+                </div>
+              </div>
+              <div class="listing--price--container mt-3 mb-5 pb-3">
+                <div>
+                  <span class="price--tags--green">150 Euro</span>
+                  <span class="price--tags--grey">/ Night</span>
+                </div>
+                <div>
+                  <a href="#" class="price--tags-btn">
+                    Jetzt buchen
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="listing--item--card swiper-slide">
+            <div class="listing--img--container">
+              <img src="./assets/img/listing/listing-1.png" alt="" />
+              <span class="top-image"><img src="./assets/img/listing/top-element.png" alt="" /></span>
+              <span class="top-text">Top</span>
+            </div>
+            <div class="listing--text--container mx-4 my-3">
+              <div class="listing--name--container">
+                <span class="listing--name">Ferienhaus RLP</span>
+                <span class="listing--icon"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="listing--details--container">
+                <div>
+                  <i class="fa-solid fa-location-dot listing-detail-icon"></i>
+                  <span class="listing-detail">Böhl-Iggelheim</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-house listing-detail-icon"></i>
+                  <span class="listing-detail mx-2">60 m²</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-users listing-detail-icon"></i>
+                  <span class="listing-detail mx-2">3</span>
+                </div>
+              </div>
+              <div class="listing--price--container mt-3 mb-5 pb-3">
+                <div>
+                  <span class="price--tags--green">150 Euro</span>
+                  <span class="price--tags--grey">/ Night</span>
+                </div>
+                <div>
+                  <a href="#" class="price--tags-btn">
+                    Jetzt buchen
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="listing--item--card swiper-slide">
+            <div class="listing--img--container">
+              <img src="./assets/img/listing/listing-1.png" alt="" />
+              <span class="top-image"><img src="./assets/img/listing/top-element.png" alt="" /></span>
+              <span class="top-text">Top</span>
+            </div>
+            <div class="listing--text--container mx-4 my-3">
+              <div class="listing--name--container">
+                <span class="listing--name">Ferienhaus RLP</span>
+                <span class="listing--icon"><i class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="listing--details--container">
+                <div>
+                  <i class="fa-solid fa-location-dot listing-detail-icon"></i>
+                  <span class="listing-detail">Böhl-Iggelheim</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-house listing-detail-icon"></i>
+                  <span class="listing-detail mx-2">60 m²</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-users listing-detail-icon"></i>
+                  <span class="listing-detail mx-2">3</span>
+                </div>
+              </div>
+              <div class="listing--price--container mt-3 mb-5 pb-3">
+                <div>
+                  <span class="price--tags--green">150 Euro</span>
+                  <span class="price--tags--grey">/ Night</span>
+                </div>
+                <div>
+                  <a href="#" class="price--tags-btn">
+                    Jetzt buchen
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- End listing Items Section -->
+
+    <!-- Start Listing list Section -->
+
+    <section class="content--container listing-list" style="padding: 80px 0px 40px 0px">
+      <div class="row listing--list--row">
+        <div class="col-md-12 col-lg-9 p-1">
+          <div class="listing--list-container highlighted--container mb-2">
+            <a href="#">
+              <div>
+                <span>
+                  <img src="./assets/img/listing/top-element.png" class="highlight--top" alt="" />
+                  <span class="high-text">Highlight</span>
+                </span>
+                <img src="./assets/img/listing/listing-1.png" alt="" class="listing--img" />
+              </div>
+              <div class="listing--list--text--container">
+                <div class="listing-list--head">
+                  <h2 class="listing-list--heading mb-0">
+                    
+                      Test Titel Test TitelTest TitelTest TitelTest
+                      TitelTe-Böhl-Iggelheim
+                    
+                  </h2>
+                  <div><i class="fa-solid fa-heart heart-highlighted"></i></div>
+                </div>
+                <div class="listing--list-detail--container mt-3">
+                  <div>
+                    <span class="listing-detail--elif"> <a href="#">Doppelzimmer - Eifel</a></span>
+                  </div>
+                  <div class="mx-4">
+                    <i class="fa-solid fa-house listing-detail-icon"></i>
+                    <span class="listing-detail mx-2">60 m²</span>
+                  </div>
+                </div>
+                <div class="listing--list-detail--container my-2">
+                  <div>
+                    <span class="listing-detail--bold">0 Zimmer</span>
+                  </div>
+                  <div class="mx-4">
+                    <span class="listing-detail--bold">0 Schlafzimmer</span>
+                  </div>
+                  <div>
+                    <span class="listing-detail--bold">3 Personen</span>
+                  </div>
+                </div>
+
+                <div class="listing--list--desc">
+                  <a href="#">
+                    Das Ferienhaus Susi ist liebevoll eingerichtet und hat eine
+                    große Terrasse mit schönem Seeblick. Die Lage auf der
+                    Sonnenterasse...
+                  </a>
+                </div>
+
+                <div class="listing--price--container">
+                  <div>
+                    <span class="price--tags--green">135 Euro</span>
+                    <span class="price--tags--grey">/ Night</span>
+                  </div>
+                  <div class="listing--list--btn--container">
+                    <a href="#" class="listing--list--btn">Details anzeigen</a>
+                    <a href="#" class="listing--list--btn--bg">
+                      Jetzt buchen
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="listing--list-container mb-2">
+            <a href="#">
+            <div>
+              <img src="./assets/img/listing/listing-2.png" alt="" class="listing--img" />
+            </div>
+            <div class="listing--list--text--container">
+              <div class="listing-list--head">
+                <h2 class="listing-list--heading mb-0">Ferienhaus RLP</h2>
+                <div><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="listing--list-detail--container mt-3">
+                <div>
+                  <span class="listing-detail--elif">Doppelzimmer - Eifel</span>
+                </div>
+                <div class="mx-4">
+                  <i class="fa-solid fa-house listing-detail-icon"></i>
+                  <span class="listing-detail mx-2">60 m²</span>
+                </div>
+              </div>
+              <div class="listing--list-detail--container my-2">
+                <div>
+                  <span class="listing-detail--bold">0 Zimmer</span>
+                </div>
+                <div class="mx-4">
+                  <span class="listing-detail--bold">0 Schlafzimmer</span>
+                </div>
+                <div>
+                  <span class="listing-detail--bold">3 Personen</span>
+                </div>
+              </div>
+
+              <div class="listing--list--desc">
+                Das Ferienhaus Susi ist liebevoll eingerichtet und hat eine
+                große Terrasse mit schönem Seeblick. Die Lage auf der
+                Sonnenterasse...
+              </div>
+
+              <div class="listing--price--container">
+                <div>
+                  <span class="price--tags--green">135 Euro</span>
+                  <span class="price--tags--grey">/ Night</span>
+                </div>
+                <div class="listing--list--btn--container">
+                  <a href="#" class="listing--list--btn">Details anzeigen</a>
+                  <a href="#" class="listing--list--btn--bg">
+                    Jetzt buchen
+                  </a>
+                </div>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="listing--list-container mb-2">
+            <a href="#">
+            <div>
+              <img src="./assets/img/listing/listing-3.png" alt="" class="listing--img" />
+            </div>
+            <div class="listing--list--text--container">
+              <div class="listing-list--head">
+                <h2 class="listing-list--heading mb-0">
+                  Test Titel Test TitelTest TitelTest TitelTest
+                  TitelTe-Böhl-Iggelheim
+                </h2>
+                <div><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="listing--list-detail--container mt-3">
+                <div>
+                  <span class="listing-detail--elif">Doppelzimmer - Eifel</span>
+                </div>
+                <div class="mx-4">
+                  <i class="fa-solid fa-house listing-detail-icon"></i>
+                  <span class="listing-detail mx-2">60 m²</span>
+                </div>
+              </div>
+              <div class="listing--list-detail--container my-2">
+                <div>
+                  <span class="listing-detail--bold">0 Zimmer</span>
+                </div>
+                <div class="mx-4">
+                  <span class="listing-detail--bold">0 Schlafzimmer</span>
+                </div>
+                <div>
+                  <span class="listing-detail--bold">3 Personen</span>
+                </div>
+              </div>
+
+              <div class="listing--list--desc">
+                Das Ferienhaus Susi ist liebevoll eingerichtet und hat eine
+                große Terrasse mit schönem Seeblick. Die Lage auf der
+                Sonnenterasse...
+              </div>
+
+              <div class="listing--price--container">
+                <div>
+                  <span class="price--tags--green">135 Euro</span>
+                  <span class="price--tags--grey">/ Night</span>
+                </div>
+                <div class="listing--list--btn--container">
+                  <a href="#" class="listing--list--btn">Details anzeigen</a>
+                  <a href="#" class="listing--list--btn--bg">
+                    Jetzt buchen
+                  </a>
+                </div>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="listing--list-container mb-2">
+            <a href="#">
+            <div>
+              <img src="./assets/img/listing/listing-1.png" alt="" class="listing--img" />
+            </div>
+            <div class="listing--list--text--container">
+              <div class="listing-list--head">
+                <h2 class="listing-list--heading mb-0">
+                  Test Titel Test TitelTest TitelTest TitelTest
+                  TitelTe-Böhl-Iggelheim
+                </h2>
+                <div><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="listing--list-detail--container mt-3">
+                <div>
+                  <span class="listing-detail--elif">Doppelzimmer - Eifel</span>
+                </div>
+                <div class="mx-4">
+                  <i class="fa-solid fa-house listing-detail-icon"></i>
+                  <span class="listing-detail mx-2">60 m²</span>
+                </div>
+              </div>
+              <div class="listing--list-detail--container my-2">
+                <div>
+                  <span class="listing-detail--bold">0 Zimmer</span>
+                </div>
+                <div class="mx-4">
+                  <span class="listing-detail--bold">0 Schlafzimmer</span>
+                </div>
+                <div>
+                  <span class="listing-detail--bold">3 Personen</span>
+                </div>
+              </div>
+
+              <div class="listing--list--desc">
+                Das Ferienhaus Susi ist liebevoll eingerichtet und hat eine
+                große Terrasse mit schönem Seeblick. Die Lage auf der
+                Sonnenterasse...
+              </div>
+
+              <div class="listing--price--container">
+                <div>
+                  <span class="price--tags--green">135 Euro</span>
+                  <span class="price--tags--grey">/ Night</span>
+                </div>
+                <div class="listing--list--btn--container">
+                  <a href="#" class="listing--list--btn">Details anzeigen</a>
+                  <a href="#" class="listing--list--btn--bg">
+                    Jetzt buchen
+                  </a>
+                </div>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="listing--list-container mb-2">
+            <a href="#">
+            <div>
+              <img src="./assets/img/listing/listing-3.png" alt="" class="listing--img" />
+            </div>
+            <div class="listing--list--text--container">
+              <div class="listing-list--head">
+                <h2 class="listing-list--heading mb-0">
+                  Test Titel Test TitelTest TitelTest TitelTest
+                  TitelTe-Böhl-Iggelheim
+                </h2>
+                <div><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="listing--list-detail--container mt-3">
+                <div>
+                  <span class="listing-detail--elif">Doppelzimmer - Eifel</span>
+                </div>
+                <div class="mx-4">
+                  <i class="fa-solid fa-house listing-detail-icon"></i>
+                  <span class="listing-detail mx-2">60 m²</span>
+                </div>
+              </div>
+              <div class="listing--list-detail--container my-2">
+                <div>
+                  <span class="listing-detail--bold">0 Zimmer</span>
+                </div>
+                <div class="mx-4">
+                  <span class="listing-detail--bold">0 Schlafzimmer</span>
+                </div>
+                <div>
+                  <span class="listing-detail--bold">3 Personen</span>
+                </div>
+              </div>
+
+              <div class="listing--list--desc">
+                Das Ferienhaus Susi ist liebevoll eingerichtet und hat eine
+                große Terrasse mit schönem Seeblick. Die Lage auf der
+                Sonnenterasse...
+              </div>
+
+              <div class="listing--price--container">
+                <div>
+                  <span class="price--tags--green">135 Euro</span>
+                  <span class="price--tags--grey">/ Night</span>
+                </div>
+                <div class="listing--list--btn--container">
+                  <a href="#" class="listing--list--btn">Details anzeigen</a>
+                  <a href="#" class="listing--list--btn--bg">
+                    Jetzt buchen
+                  </a>
+                </div>
+              </div>
+            </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-3 p-1">
+          <div class="filter--by--head">
+            <h3 class="filter--by--heading">Filter by:</h3>
+          </div>
+
+          <div class="filter--items">
+            <h3 class="filter--items--head">Beliebte Filter</h3>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Wohnzimmer
+                </label>
+              </div>
+              <span class="select--box--number">34</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Küche
+                </label>
+              </div>
+              <span class="select--box--number">16</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Schlafzimmer
+                </label>
+              </div>
+              <span class="select--box--number">35</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Badezimmer
+                </label>
+              </div>
+              <span class="select--box--number">18</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Aussenausstattung
+                </label>
+              </div>
+              <span class="select--box--number">28</span>
+            </div>
+          </div>
+
+          <div class="filter--items">
+            <h3 class="filter--items--head">geeignet für</h3>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Allergiker
+                </label>
+              </div>
+              <span class="select--box--number">31</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Behindertengerecht
+                </label>
+              </div>
+              <span class="select--box--number">13</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Erholungsurlaub
+                </label>
+              </div>
+              <span class="select--box--number">42</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Ferien auf dem Bauernhof
+                </label>
+              </div>
+              <span class="select--box--number">33</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Golfurlaub
+                </label>
+              </div>
+              <span class="select--box--number">25</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Nichtraucher
+                </label>
+              </div>
+              <span class="select--box--number">14</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Senioren
+                </label>
+              </div>
+              <span class="select--box--number">31</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Single-Urlaub
+                </label>
+              </div>
+              <span class="select--box--number">13</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Sport- und Aktivurlaub
+                </label>
+              </div>
+              <span class="select--box--number">45</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Städtereise
+                </label>
+              </div>
+              <span class="select--box--number">33</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Urlaub am See/Fluss
+                </label>
+              </div>
+              <span class="select--box--number">25</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Urlaub mit Baby/Kleinkind
+                </label>
+              </div>
+              <span class="select--box--number">14</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Urlaub mit Familie
+                </label>
+              </div>
+              <span class="select--box--number">31</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Urlaub mit Hund
+                </label>
+              </div>
+              <span class="select--box--number">13</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Wander- oder Kletterurlaub
+                </label>
+              </div>
+              <span class="select--box--number">42</span>
+            </div>
+          </div>
+
+          <div class="filter--items">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#Hausregeln" aria-expanded="false" aria-controls="Hausregeln">
+                    Hausregeln
+                  </button>
+                </h2>
+                <div id="Hausregeln" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="filter--select--box-container">
+                      <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input filter--select--box" type="checkbox" value=""
+                          id="flexCheckDefault" />
+                        <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                          Wohnzimmer
+                        </label>
+                      </div>
+                      <span class="select--box--number">34</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#Lage" aria-expanded="false" aria-controls="Lage">
+                    Lage
+                  </button>
+                </h2>
+                <div id="Lage" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="filter--select--box-container">
+                      <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input filter--select--box" type="checkbox" value=""
+                          id="flexCheckDefault" />
+                        <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                          Wohnzimmer
+                        </label>
+                      </div>
+                      <span class="select--box--number">34</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#Wohnzimmer" aria-expanded="false" aria-controls="Wohnzimmer">
+                    Wohnzimmer
+                  </button>
+                </h2>
+                <div id="Wohnzimmer" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="filter--select--box-container">
+                      <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input filter--select--box" type="checkbox" value=""
+                          id="flexCheckDefault" />
+                        <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                          Wohnzimmer
+                        </label>
+                      </div>
+                      <span class="select--box--number">34</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#Küche" aria-expanded="false" aria-controls="Küche">
+                    Küche
+                  </button>
+                </h2>
+                <div id="Küche" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="filter--select--box-container">
+                      <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input filter--select--box" type="checkbox" value=""
+                          id="flexCheckDefault" />
+                        <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                          Wohnzimmer
+                        </label>
+                      </div>
+                      <span class="select--box--number">34</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#Schlafzimmer" aria-expanded="false" aria-controls="Schlafzimmer">
+                    Schlafzimmer
+                  </button>
+                </h2>
+                <div id="Schlafzimmer" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="filter--select--box-container">
+                      <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input filter--select--box" type="checkbox" value=""
+                          id="flexCheckDefault" />
+                        <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                          Wohnzimmer
+                        </label>
+                      </div>
+                      <span class="select--box--number">34</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#Badezimmer" aria-expanded="false" aria-controls="Badezimmer">
+                    Badezimmer
+                  </button>
+                </h2>
+                <div id="Badezimmer" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="filter--select--box-container">
+                      <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input filter--select--box" type="checkbox" value=""
+                          id="flexCheckDefault" />
+                        <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                          Wohnzimmer
+                        </label>
+                      </div>
+                      <span class="select--box--number">34</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#Aussenausstattung" aria-expanded="false" aria-controls="Aussenausstattung">
+                    Aussenausstattung
+                  </button>
+                </h2>
+                <div id="Aussenausstattung" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="filter--select--box-container">
+                      <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input filter--select--box" type="checkbox" value=""
+                          id="flexCheckDefault" />
+                        <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                          Wohnzimmer
+                        </label>
+                      </div>
+                      <span class="select--box--number">34</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#WellnesseinrichtungeinHaus" aria-expanded="false"
+                    aria-controls="WellnesseinrichtungeinHaus">
+                    Wellnesseinrichtunge in Haus
+                  </button>
+                </h2>
+                <div id="WellnesseinrichtungeinHaus" class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="filter--select--box-container">
+                      <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input filter--select--box" type="checkbox" value=""
+                          id="flexCheckDefault" />
+                        <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                          Wohnzimmer
+                        </label>
+                      </div>
+                      <span class="select--box--number">34</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#EssenundTrinkenimHaus" aria-expanded="false" aria-controls="EssenundTrinkenimHaus">
+                    Essen und Trinken im Haus
+                  </button>
+                </h2>
+                <div id="EssenundTrinkenimHaus" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="filter--select--box-container">
+                      <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input filter--select--box" type="checkbox" value=""
+                          id="flexCheckDefault" />
+                        <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                          Wohnzimmer
+                        </label>
+                      </div>
+                      <span class="select--box--number">34</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#ServiceundBesonderheiten" aria-expanded="false"
+                    aria-controls="ServiceundBesonderheiten">
+                    Service und Besonderheiten
+                  </button>
+                </h2>
+                <div id="ServiceundBesonderheiten" class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="filter--select--box-container">
+                      <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input filter--select--box" type="checkbox" value=""
+                          id="flexCheckDefault" />
+                        <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                          Wohnzimmer
+                        </label>
+                      </div>
+                      <span class="select--box--number">34</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#Freizeitmoglichkeiten" aria-expanded="false" aria-controls="Freizeitmoglichkeiten">
+                    Freizeitmoglichkeiten
+                  </button>
+                </h2>
+                <div id="Freizeitmoglichkeiten" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="filter--select--box-container">
+                      <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input filter--select--box" type="checkbox" value=""
+                          id="flexCheckDefault" />
+                        <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                          Wohnzimmer
+                        </label>
+                      </div>
+                      <span class="select--box--number">34</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter--items">
+            <h3 class="filter--items--head">
+              Städte und Gemeinden in der Eifel
+            </h3>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Mehren
+                </label>
+              </div>
+              <span class="select--box--number">21</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Daun
+                </label>
+              </div>
+              <span class="select--box--number">18</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Meerfeld
+                </label>
+              </div>
+              <span class="select--box--number">12</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Bad Bertrich
+                </label>
+              </div>
+              <span class="select--box--number">11</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Gerolstein
+                </label>
+              </div>
+              <span class="select--box--number">10</span>
+            </div>
+            <div class="filter--select--box-container">
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input filter--select--box" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label filter--select--box--label mx-1" for="flexCheckDefault">
+                  Bereborn
+                </label>
+              </div>
+              <span class="select--box--number">5</span>
+            </div>
+          </div>
+
+          <button class="filter--btn--update">Update</button>
+        </div>
+
+
+        <div class="listing--pagination d-flex my-3 py-3">
+          <div class="pagination--value pagination--value--active"><a href="#">1</a></div>
+          <div class="pagination--value">2</div>
+          <div class="pagination--value">3</div>
+          <div class="pagination--skip">...</div>
+          <div class="pagination--value">10</div>
+        </div>
+      </div>
+    </section>
+    <!-- End Listing list Section -->
+
+    <!-- Start Popular region -->
+    <section class="popularRegion--section--container position-relative">
+      <h2 class="main-heading pb-5" style="max-width: 893px; margin: auto">
+        Beliebte Aktivitäten für Ihren perfekten Eifel-Urlaub
+      </h2>
+
+      <!-- <div class="background--green"></div> -->
+
+      <div class="popularRegion--section">
+        <div class="row w-100 p-0 m-0 position-relative popularRegion--container-1">
+          <div class="col-md-6 p-0">
+            <img src="./assets/img/popular--region/popular--region-1.png" alt="" class="w-100"
+              style="max-width: 1000px" />
+          </div>
+          <div class="col-md-6 popularRegion--text--section">
+            <!--  -->
+            <div class="back-shadow"></div>
+            <div class="popularRegion--container">
+              <h4 class="popularRegion--heading">Beliebte Aktivitäten</h4>
+              <p class="popularRegion--para">
+                <p class="popularRegion--para">
+                  Rheinland-Pfalz bietet einige der besten Natur-Aktivitäten für
+                  Sie und Ihren Hund. Von Wanderungen mit dem Hund über Schloss-
+                  und Burgenbesichtigungen bis hin zu weitläufigen Wäldern und
+                  Feldern an Rhein, Mosel, Lahn oder Nahe gibt es eine Fülle von
+                  Aktivitäten, die der ganzen Familie lange in Erinnerung
+                  bleiben werden.
+                </p>
+                <p class="popularRegion--para mt-2">
+                  Wie wäre es mit einer Besichtigung mit Ihrem
+                  Hund von Burg Eltz, Burg Cochem oder einer Schiffsfahrt auf
+                  einem Fluss wie beispielsweise der Mosel oder dem Rhein?
+                  Weingutsbesichtigungen mit anschließender Weinprobe oder das
+                  Probieren von köstlichen Gerichten wie dem einzigartigen
+                  “Döppekooche“ oder dem Pfälzer Saumagen, ein über die grenzen
+                  hinweg bekanntes landestypisches Gericht?
+                </p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row w-100 p-0 m-0 popularRegion--container-2 position-relative">
+          <div class="col-md-6 popularRegion--text--section">
+            <div class="back-shadow-1"></div>
+            <div class="popularRegion--container">
+
+              <h4 class="popularRegion--heading--sub">Die Vulkaneinfel</h4>
+              <h4 class="popularRegion--heading">Maare, Seen, tiefe Krater und unberührte Natur</h4>
+              <p class="popularRegion--para">
+                Die Eifel im Westen Deutschlands ist ein wunderschönes Vulkangebiet, das sich von allen anderen Gegenden
+                des Landes unterscheidet. Geprägt von einzigartigen Merkmalen wie Maaren, Seen, tiefen Kratern, tiefen
+                Wäldern und unberührter Natur, hat dieses Gebiet Besucher seit seinen ersten Bewohnern vor Jahrhunderten
+                in seinen Bann gezogen.
+              </p>
+              <p class="popularRegion--para mt-2">
+                Die Eifel erstreckt sich über weite Teile der Bundesländer Rheinland-Pfalz und Nordrhein-Westfalen,
+                wobei jedes Gebiet leicht unterschiedliche Merkmale aufweist, was ihr ein abwechslungsreiches, aber
+                gleichermaßen spannendes Terrain verleiht.
+              </p>
+              <p class="popularRegion--para mt-2">
+                Mit Hunderten von Kilometern an Wanderwegen, die sich durch die üppigen Täler und Wälder ziehen, können
+                Kletterer hier tagelange Abenteuer erleben. Um Deutschlands wilde Seite zu erleben, gibt es kaum einen
+                besseren Ort als die Eifel.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 p-0">
+            <img src="./assets/img/popular--region/popular--region-2.png" alt="" class="w-100"
+              style="max-width: 1000px" />
+          </div>
+        </div>
+        <div class="row w-100 p-0 m-0 position-relative popularRegion--container-1">
+          <div class="col-md-6 p-0">
+            <img src="./assets/img/popular--region/popular--region-3.png" alt="" class="w-100"
+              style="max-width: 1000px" />
+          </div>
+          <div class="col-md-6 popularRegion--text--section">
+            <div class="back-shadow"></div>
+            <div class="popularRegion--container">
+              <h4 class="popularRegion--heading--sub">Der Rhein</h4>
+              <h4 class="popularRegion--heading">Da sie durch Rheinland-Pfalz fließt</h4>
+
+
+              <p class="popularRegion--para">
+                <p class="popularRegion--para">
+                  Viele Touristen kommen, um die Schönheit dieses Wasserweges zu erleben. Es gibt nur wenige Flüsse in
+                  Europa, die so berühmt sind wie der Rhein. Sein gewundener Lauf bildet natürliche Grenzen für viele
+                  Länder, und seine Nebenflüsse fließen durch einige der bezauberndsten Orte.
+                </p>
+                <p class="popularRegion--para mt-2">
+                  Die Nebenflüsse des Rheins sind eine Mischung aus schönen, historischen und mächtigen Flüssen, die
+                  alle ihre eigene Geschichte zu erzählen haben.
+                </p>
+                <p class="popularRegion--para mt-2">
+                  Die Schifffahrt auf dem Rhein ist ein Erlebnis wie kein anderes. Dieser Fluss fließt durch
+                  Deutschland, die Niederlande, Frankreich und die Schweiz und bietet auf seiner Reise großartige
+                  Aussichten. An verschiedenen Abschnitten des Rheins lassen sich malerische Dörfer mit ihrer
+                  einzigartigen Architektur und eine Vielzahl von Tieren entdecken.
+                </p>
+                <p class="popularRegion--para mt-2">
+                  Für Geschichtsinteressierte bieten die vielen alten Burgen und archäologischen Stätten entlang der
+                  gesamten Strecke interessante Einblicke in die Vergangenheit. Kein Wunder also, dass die Menschen von
+                  weit her kommen, um diese germanische Lebensader zu erkunden; wer sie einmal befahren hat, wird dieses
+                  Erlebnis so schnell nicht vergessen!
+                </p>
+                <p class="popularRegion--para mt-2">
+                  Mit seinen zahlreichen Naturschönheiten ist Rheinland-Pfalz ein Paradies für alle, die die Natur
+                  lieben und eine unvergessliche Reise auf einem der faszinierensten Flüsse erleben möchten
+                </p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row w-100 p-0 m-0 popularRegion--container-2 position-relative">
+          <div class="col-md-6 popularRegion--text--section">
+            <div class="back-shadow-1"></div>
+
+            <div class="popularRegion--container">
+              <h4 class="popularRegion--heading">Outdoor-Aktivitäten mit Ihrem Hund in Rheinland Pfalz</h4>
+
+
+              <p class="popularRegion--para">
+                Hundewanderer können die zahlreichen Wanderwege mit ihrem Begleiter im Schlepptau erkunden und so ein
+                wahrhaft einzigartiges Erlebnis genießen. Darüber hinaus gibt es einige Flüsse und Bäche, an denen Sie
+                mit Ihrem Hund ein erfrischendes Bad nehmen können.
+              </p>
+              <p class="popularRegion--para mt-2">
+                Für diejenigen, die noch mehr Abenteuer suchen, heißen viele rheinland-pfälzische Hotels und Restaurants
+                Hunde mit offenen Armen willkommen! Viel Spaß beim Urlaub mit Ihrem Vierbeiner in Rheinland-Pfalz!
+              </p>
+
+            </div>
+          </div>
+          <div class="col-md-6 p-0">
+            <img src="./assets/img/popular--region/popular--region-4.png" alt="" class="w-100"
+              style="max-width: 1000px" />
+          </div>
+        </div>
+        <div class="row w-100 p-0 m-0 position-relative popularRegion--container-1">
+          <div class="col-md-6 p-0">
+            <img src="./assets/img/popular--region/popular--region-5.png" alt="" class="w-100"
+              style="max-width: 1000px" />
+          </div>
+          <div class="col-md-6 popularRegion--text--section">
+            <div class="back-shadow"></div>
+            <div class="popularRegion--container">
+              <h4 class="popularRegion--heading">Erkunden Sie die lokale Küche von Rheinland-Pfalz mit Ihrem Hund</h4>
+
+              <p class="popularRegion--para">
+                Die rheinland-pfälzischen landestypischen Gerichte wie "Rheinischer Sauerbraten" oder Rippchen und
+                Sauerkraut gehören zu den beliebtesten Speisen des Landes, voller Geschmack und spannender Texturen.
+              </p>
+              <p class="popularRegion--para mt-2">
+                Ob bei einem Picknick in den malerischen Tälern des Hunsrücks oder bei der Erkundung der alten
+                Festungsanlagen entlang des Moseltals, Sie können diese kulinarischen Köstlichkeiten genießen und dabei
+                die Sehenswürdigkeiten bewundern.
+              </p>
+              <p class="popularRegion--para mt-2">
+                Mit einer Vielzahl von Restaurants, die sich auf haustierfreundliche Reisende eingestellt haben, gibt es
+                viele köstliche Essensmöglichkeiten, die Sie mit Ihrem vierbeinigen Freund erkunden können.
+              </p>
+              <p class="popularRegion--para mt-2">
+                Warum also nicht einmal etwas Neues ausprobieren und die rheinland-pfälzische Küche erkunden - mit Ihrem
+                Hund an Ihrer Seite?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row w-100 p-0 m-0 popularRegion--container-2 position-relative">
+          <div class="back-shadow-1"></div>
+          <div class="col-md-6 popularRegion--text--section">
+            <div class="popularRegion--container">
+
+              <h4 class="popularRegion--heading">Tipps für eine stressfreie Reise mit Ihrem pelzigen Freund</h4>
+
+
+              <p class="popularRegion--para">
+                Ganz gleich, ob Sie eine raue Wanderung oder einen gemütlichen Spaziergang unternehmen möchten,
+                Rheinland-Pfalz bietet Ihrem Hund eine unvergessliche Zeit. Mit seinen malerischen Aussichten, sanften
+                Hügeln und spektakulären Sonnenuntergängen bietet Rheinland-Pfalz den perfekten Rahmen für bleibende
+                Erinnerungen mit Ihrem vierbeinigen Freund.
+              </p>
+              <p class="popularRegion--para mt-2">
+                Einer der Höhepunkte dieser Region sind die Weinberge in den Bergen, wo Besucher die malerische Aussicht
+                genießen können, während sie die Weine der nahe gelegenen Weinkellereien probieren.
+              </p>
+              <p class="popularRegion--para mt-2">
+                Die zahlreichen Wanderwege rund um die See und Maare oder entlang der Flüsse bieten viel Bewegung für
+                Sie und Ihren Vierbeiner, der sich freuen wird, die reiche Natur mit Ihnen zu entdecken.
+              </p>
+              <p class="popularRegion--para mt-2">
+                Von kleinen Dörfern bis hin zu romantischen Schlössern und Burgen - Rheinland-Pfalz hat alles zu bieten
+                und wird bei Ihnen und Ihrem vierbeinigen Begleiter sicher einen bleibenden Eindruck hinterlassen.
+              </p>
+              <p class="popularRegion--para mt-2">
+                Also warten Sie nicht länger: Packen Sie Ihre Koffer (und die Ihrer pelzigen Freunde) und machen Sie
+                sich bereit für ein tolles Abenteuer im schönen Rheinland-Pfalz!
+              </p>
+
+            </div>
+          </div>
+          <div class="col-md-6 p-0">
+            <img src="./assets/img/popular--region/popular--region-6.png" alt="" class="w-100"
+              style="max-width: 1000px" />
+          </div>
+        </div>
+
+        <div class="row w-100 p-0 m-0 position-relative popularRegion--container-1">
+          <div class="col-md-6 p-0">
+            <img src="./assets/img/popular--region/popular--region-7.png" alt="" class="w-100"
+              style="max-width: 1000px" />
+          </div>
+          <div class="col-md-6 popularRegion--text--section">
+            <div class="back-shadow"></div>
+            <div class="popularRegion--container">
+              <h4 class="popularRegion--heading">Unterkunftssuche für Sie und Ihr Haustier</h4>
+              <p class="popularRegion--para">
+                Sie suchen eine neue Unterkunft für Ihr Haustier? Es kann schwierig sein, eine geeignete Unterkunft zu
+                finden, in der Tiere erlaubt sind, so dass die Suche oft viel Zeit und Mühe kostet. Zum Glück gibt es
+                inzwischen zahlreiche Websites, die Tierhaltern bei der Suche nach einer geeigneten Unterkunft helfen.
+              </p>
+              <p class="popularRegion--para mt-2">
+                Von kleinen Wohnungen bis hin zu weitläufigen Villen - viele bieten Privatzimmer, Waschmöglichkeiten und
+                viele haustierfreundliche Ausstattungsmerkmale, sowohl innen als auch außen.
+              </p>
+              <p class="popularRegion--para mt-2">
+                Von extragroßen Fenstern und Balkonen bis hin zu eingezäunten Gärten in der Umgebung - die Möglichkeiten
+                sind endlos. Ein komfortables Zuhause für Sie und Ihren pelzigen Lieblingsfreund zu finden, muss ein
+                Teil ihrer sorgfältigen Urlaubsvorbereitungen sein, damit Sie anschließend mit ihrem Freund einen
+                wunderschönen Urlaub verbringen können.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row w-100 p-0 m-0 popularRegion--container-2 position-relative">
+          <div class="col-md-6 popularRegion--text--section">
+            <!-- <div class="back-shadow-1"></div> -->
+            <div class="popularRegion--container">
+              <h4 class="popularRegion--heading">Erinnerungen schaffen, die ein Leben lang halten!</h4>
+              <p class="popularRegion--para">
+                Ganz gleich, ob Sie eine raue Wanderung oder einen gemütlichen Spaziergang unternehmen möchten,
+                Rheinland-Pfalz bietet Ihrem Hund eine unvergessliche Zeit. Mit seinen malerischen Aussichten, sanften
+                Hügeln und spektakulären Sonnenuntergängen bietet Rheinland-Pfalz den perfekten Rahmen für bleibende
+                Erinnerungen mit Ihrem vierbeinigen Freund.
+              </p>
+              <p class="popularRegion--para mt-2">
+                Einer der Höhepunkte dieser Region sind die Weinberge in den Bergen, wo Besucher die malerische Aussicht
+                genießen können, während sie die Weine der nahe gelegenen Weinkellereien probieren.
+              </p>
+              <p class="popularRegion--para mt-2">
+                Die zahlreichen Wanderwege rund um die See und Maare oder entlang der Flüsse bieten viel Bewegung für
+                Sie und Ihren Vierbeiner, der sich freuen wird, die reiche Natur mit Ihnen zu entdecken.
+              </p>
+              <p class="popularRegion--para mt-2">
+                Von kleinen Dörfern bis hin zu romantischen Schlössern und Burgen - Rheinland-Pfalz hat alles zu bieten
+                und wird bei Ihnen und Ihrem vierbeinigen Begleiter sicher einen bleibenden Eindruck hinterlassen.
+              </p>
+              <p class="popularRegion--para mt-2">
+                Also warten Sie nicht länger: Packen Sie Ihre Koffer (und die Ihrer pelzigen Freunde) und machen Sie
+                sich bereit für ein tolles Abenteuer im schönen Rheinland-Pfalz!
+              </p>
+
+            </div>
+          </div>
+          <div class="col-md-6 p-0">
+            <img src="./assets/img/popular--region/popular--region-8.png" alt="" class="w-100"
+              style="max-width: 1000px" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Popular region -->
+
+    <!-- start of Footer -->
+    <footer>
+      <div class="content--container">
+        <div class="footer--container">
+          <div class="row w-100 footer--section m-0">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 footer-section--1 my-md-3 my-sm-3 p-0">
+              <div>
+                <img src="./assets/img/logo.png" alt="" class="footer--logo" />
+                <p class="footer--about">
+                  Drei kreative Köpfe mit Leidenschaft für Ferienwohnungen,
+                  präsentieren ihre Angebote auf unserer Plattform mit
+                  sicheren Funktionen.
+                </p>
+                <div class="footer--social-icon">
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 my-md-3 my-sm-3">
+              <div class="row">
+                <div class="col-md-5 col-sm-5 link--container">
+                  <ul class="footer--links">
+                    <li class="footer--links--head">Navigation</li>
+                    <li>Startseite</li>
+                    <li>Kontakt</li>
+                    <li>Über uns</li>
+                    <li>Magazin</li>
+                  </ul>
+                </div>
+
+                <div class="col-md-7 col-sm-7 link--container">
+                  <ul class="footer--links">
+                    <li class="footer--links--head">Vermieter werden</li>
+                    <li>Login</li>
+                    <li>Preise</li>
+                    <li>Vermieter Blog</li>
+                    <li>Jetzt Registrieren</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 my-md-3 my-sm-3">
+              <div class="row">
+                <div class="col-md-6 col-sm-5 link--container">
+                  <ul class="footer--links">
+                    <li class="footer--links--head">Regionen</li>
+                    <li>Ahrtal</li>
+                    <li>Eifel</li>
+                    <li>Hunsrück</li>
+                    <li>Mittelrhein</li>
+                  </ul>
+                </div>
+
+                <div class="col-md-6 col-sm-7 link--container">
+                  <ul class="footer--links">
+                    <li class="footer--links--head" style="visibility: hidden">
+                      Regionen
+                    </li>
+                    <li>Mosel</li>
+                    <li>Pfalz</li>
+                    <li>Rheinhessen</li>
+                    <li>Westerwald</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 footer-section--2 text-end my-md-3 my-sm-3 p-0">
+              <div>
+                <h4 class="footer--feature">Vermieter werden</h4>
+                <p class="footer--about">
+                  Werden Sie Vermieter bei uns und profitieren Sie von
+                  zahlreichen Vorteilen! Wir erhöhen Ihre Auslastung und
+                  steigern Ihr Einkommen.
+                </p>
+                <div class="pt-2">
+                  <a href="#" class="footer--btn">Jetzt registrieren</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="text-white mt-5 mb-4" />
+
+          <div class="footer--copyright--section">
+            <div class="footer--copyright--link">
+              <ul>
+                <li class="mx-3">Impressum</li>
+                <li class="mx-3">Datenschutz</li>
+                <li class="mx-3">Haftungsausschluss</li>
+                <li class="mx-3">Support</li>
+              </ul>
+            </div>
+            <div>
+              <span class="copyright">© Copyright 2023, All Rights Reserved</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+  </div>
+
+  <!-- Jquery Cdn -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Swipper Js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- chosen JS -->
+  <script src="./assets/plugins/chosen/chosen.js"></script>
+  <!-- Custom JS -->
+  <script src="./assets/script/script.js"></script>
+  <script src="./assets/script/swipper.js"></script>
+
+  <script></script>
+</body>
+
+</html>

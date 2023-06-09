@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="./assets/plugins/bootstrap/css/bootstrap.min.css"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Swipper JS -->
+
+    <link
+      rel="stylesheet"
+      href="./assets/plugins/swipper/swiper-bundle.min.css"
+    />
+
+    <!-- Chosen CSS -->
+    <link rel="stylesheet" href="./assets/plugins/chosen/chosen.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Leaflet Js -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
+    <title>rlp-urlaub.de &#8211; Rheinland-Pfalz Urlaubsportal</title>
+  </head>
+
+  <body>
+    <!-- Page Wrapper -->
+    <div class="wrapper">
+      <!-- Navbar & Header -->
+      <header class="header position-relative">
+        <!-- Start Navbar -->
+        <div class="content--container">
+          <!-- <b class="screen-overlay"></b> -->
+
+          <div class="header-inner">
+            <nav class="navbar2 navbar d-lg-none navbar-expand-lg my-3">
+              <div
+                class="content--container d-flex justify-content-between align-items-center"
+              >
+                <a class="navbar-brand fw-bold" href="#"
+                  ><img
+                    src="./assets/img/logo--dark.png"
+                    class="img-fluid"
+                    alt=""
+                /></a>
+                <button
+                  class="navbar-toggler navbar-toggler--dark"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-trigger="#navbar_main"
+                  aria-controls="sidebar"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+              <hr class="text-white w-100" />
+              <div class="content--container">
+                <ul class="navbar-nav navbar-nav--2 mb-2 mb-lg-0 nav--list-2">
+                  <li class="nav-item" style="margin-right: 5px">
+                    <a class="nav-link nav-link-icon nav-link--dark" href="#"
+                      ><i class="fa-regular fa-heart"></i
+                    ></a>
+                  </li>
+                  <div class="d-flex">
+                    <li class="nav-item mx-3">
+                      <a class="nav-link nav-link--dark" href="#">Einloggen</a>
+                    </li>
+                    <li class="nav-item">
+                      <button class="btn header-btn">
+                        Ferlenunterkunft vermieten
+                      </button>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+            </nav>
+            <div class="container-fluid p-0">
+              <nav
+                id="navbar_main"
+                class="navbar mobile-offcanvas navbar-expand-lg py-3"
+              >
+                <div class="container-fluid p-0">
+                  <a class="navbar-brand fw-bold d-none d-lg-flex" href="#"
+                    ><img
+                      src="./assets/img/logo--dark.png"
+                      class="img-fluid"
+                      alt=""
+                  /></a>
+                  <a class="navbar-brand fw-bold" href="#"
+                    ><img
+                      src="./assets/img/logo.png"
+                      class="img-fluid d-lg-none"
+                      alt=""
+                  /></a>
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-trigger="#navbar_main"
+                    aria-controls="sidebar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span><i class="fa-solid fa-close"></i></span>
+                  </button>
+                  <div
+                    class="navbar-collapse justify-content-end collapse show my--md--5"
+                    id="navbarSupportedContent"
+                  >
+                    <ul class="navbar-nav mb-2 mb-lg-0 nav--list-1">
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle navlink--margin nav-link--dark"
+                          href="#"
+                          id="navbarDropdownMenuLink"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Urlaubscregionen
+                        </a>
+                        <div
+                          class="dropdown-menu navlink--margin"
+                          aria-labelledby="navbarDropdownMenuLink"
+                        >
+                          <a class="dropdown-item" href="#">Ahrtal</a>
+                          <a class="dropdown-item" href="#">Eifel</a>
+                          <a class="dropdown-item" href="#">Lahn</a>
+                          <a class="dropdown-item" href="#">Hunsrück</a>
+                          <a class="dropdown-item" href="#">Lahntal</a>
+                          <a class="dropdown-item" href="#">Mittelrhein</a>
+                          <a class="dropdown-item" href="#">Mosel</a>
+                          <a class="dropdown-item" href="#">Nahe</a>
+                          <a class="dropdown-item" href="#">Pfalz</a>
+                          <a class="dropdown-item" href="#">Rheinhessen</a>
+                          <a class="dropdown-item" href="#">Westerwald</a>
+                        </div>
+                      </li>
+                      <li class="nav-item navlink--margin">
+                        <a class="nav-link nav-link--dark" href="#"
+                          >Last-Minute</a
+                        >
+                      </li>
+
+                      <li class="nav-item navlink--margin">
+                        <a class="nav-link nav-link--dark" href="#">Magazin</a>
+                      </li>
+                    </ul>
+                    <hr class="nav-link--dark nav-seprater" />
+                    <ul
+                      class="navbar-nav mb-2 mb-lg-0 nav--list-2 d-none d-lg-flex"
+                    >
+                      <li class="nav-item navlink--margin">
+                        <a
+                          class="nav-link nav-link-icon nav-link--dark"
+                          href="#"
+                          ><i class="fa-regular fa-heart"></i
+                        ></a>
+                      </li>
+                      <li class="nav-item navlink--margin">
+                        <a class="nav-link nav-link--dark" href="#"
+                          >Einloggen</a
+                        >
+                      </li>
+                      <li class="nav-item navlink--margin--l">
+                        <button class="btn header-btn">
+                          Ferlenunterkunft vermieten
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!-- End Navbar -->
+      </header>
+
+      <!-- Start Section Magazine Container  -->
+
+      <section class="magazine--container position-relative">
+        <div class="back-shadow"></div>
+        <div class="content--container">
+          <div class="breadcrumb--container">
+            <div>
+              <h1 class="breadcrumb--heading">Ferienhaus</h1>
+              <!-- <span class="breadcrumb--heading--sub">Letzte Beiträge</span> -->
+            </div>
+            <div>
+              <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="./index.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item" aria-current="page">Magazin</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <div class="content--container">
+          <div class="magazine--content--container">
+            <div class="row">
+              <div class="col-md-12 col-lg-8 mb-5">
+                <div class="col-md-12">
+                  <div class="brk-cover-outer">
+                    <div class="brk-row">
+                      <div class="brk-cover brk--gallery-lighbox">
+                        <div class="brk--images" data-size="5">
+                          <a
+                            href="#"
+                            class="brk--image"
+                            style="
+                              background-image: url('./assets/img/Vacation Slider/vacation--slider--1.png');
+                            "
+                          ></a>
+                          <a
+                            href="#"
+                            class="brk--image"
+                            style="
+                              background-image: url('./assets/img/Vacation Slider/vacation--slider--2.png');
+                            "
+                          ></a>
+                          <a
+                            href="#"
+                            class="brk--image"
+                            style="
+                              background-image: url('./assets/img/Vacation Slider/vacation--slider--3.png');
+                            "
+                          ></a>
+                          <a
+                            href="#"
+                            class="brk--image"
+                            style="
+                              background-image: url('./assets/img/Vacation Slider/vacation--slider--4.png');
+                            "
+                          ></a>
+                          <a
+                            href="#"
+                            class="brk--image"
+                            style="
+                              background-image: url('./assets/img/Vacation Slider/vacation--slider--5.png');
+                            "
+                          ></a>
+                        </div>
+                        <ul class="brk-gallery-actions brk--top">
+                          <li>
+                            <a class="" href="#">
+                              <img src="./assets/img/icon/heart.svg" alt="" />
+                            </a>
+                          </li>
+                        </ul>
+                        <ul class="brk-gallery-actions brk--bottom">
+                          <li>
+                            <a href="#" id="expand-gallery">
+                              See more 32 more
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="expand-slider-modal">
+                  <div class="expand-slider-modal-container">
+                    <a href="#" class="expand-slider-modal-close">
+                      <i class="fas fa-times"></i>
+                    </a>
+
+                    <div class="swiper ex-swiper mySwiper ex-mySwiper">
+                      <div class="swiper-wrapper ex-swiper-wrapper">
+                        <div class="swiper-slide ex-swiper-slide">
+                          <div class="ex-swiper--slide-container">
+                            <img
+                              src="https://development.rlp-urlaub.de/wp-content/uploads/2019/12/Susi-Aussen.jpg"
+                            />
+                            <p class="ex-swiper-slide-descripton">
+                              Das Ferienhaus Susi ist liebevoll eingerichtet und
+                              hat eine große Terrasse mit schönem Seeblick. Die
+                              Lage auf der Sonnenterasse 13 bringt schon die
+                              frühe Morgensonne und ebenso die Abendsonne.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="swiper-slide ex-swiper-slide">
+                          <img
+                            src="https://development.rlp-urlaub.de/wp-content/uploads/2019/12/Infrarot-Sauna-Susi.jpg"
+                          />
+                        </div>
+                        <div class="swiper-slide ex-swiper-slide">
+                          <img
+                            src="https://development.rlp-urlaub.de/wp-content/uploads/2019/12/Susi-WZ-ofen-2.jpg"
+                          />
+                        </div>
+                        <div class="swiper-slide ex-swiper-slide">
+                          <img
+                            src="https://development.rlp-urlaub.de/wp-content/uploads/2019/12/Susi-WZ-Couch.jpg"
+                          />
+                        </div>
+                        <div class="swiper-slide ex-swiper-slide">
+                          <img
+                            src="https://development.rlp-urlaub.de/wp-content/uploads/2019/12/Susi-WZ-1.jpg"
+                          />
+                        </div>
+                        <div class="swiper-slide ex-swiper-slide">
+                          <img
+                            src="https://development.rlp-urlaub.de/wp-content/uploads/2019/12/Susi-Küche-EZ-Ofen-1.jpg"
+                          />
+                        </div>
+                        <div class="swiper-slide ex-swiper-slide">
+                          <img
+                            src="https://development.rlp-urlaub.de/wp-content/uploads/2019/12/Susi-Flur-1.jpg"
+                          />
+                        </div>
+                        <div class="swiper-slide ex-swiper-slide">
+                          <img
+                            src="https://development.rlp-urlaub.de/wp-content/uploads/2019/12/Susi-EZ-1.jpg"
+                          />
+                        </div>
+                        <div class="swiper-slide ex-swiper-slide">
+                          <img
+                            src="https://development.rlp-urlaub.de/wp-content/uploads/2019/12/Susi-Bad-Eingang.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="swiper-button swiper-button-next ex-swiper-button ex-swiper-button-next"
+                      >
+                        <i class="fas fa-arrow-right"></i>
+                      </div>
+                      <div
+                        class="swiper-button swiper-button-prev ex-swiper-button ex-swiper-button-prev"
+                      >
+                        <i class="fas fa-arrow-left"></i>
+                      </div>
+                      <div class="ex-swiper-pagination text-center"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <h2 class="vc--main--heading">
+                    Test Titel Test TitelTest TitelTest TitelTest
+                    TitelTe-Böhl-Iggelheim
+                  </h2>
+                  <div class="vc--listing--items--3">
+                    <div class="vc--items--container">
+                      <img
+                        src="./assets/img/icon/multiple-users-silhouette.svg"
+                        alt=""
+                        class="vc--items--icon"
+                      />
+                      <span class="vc--items--text">3 Gäste</span>
+                    </div>
+                    <div class="vc--items--container">
+                      <img
+                        src="./assets/img/icon/double-bed.svg"
+                        alt=""
+                        class="vc--items--icon"
+                      />
+                      <span class="vc--items--text">2 Schlafzimmer</span>
+                    </div>
+                    <div class="vc--items--container">
+                      <img
+                        src="./assets/img/icon/shower.svg"
+                        alt=""
+                        class="vc--items--icon"
+                      />
+                      <span class="vc--items--text">3 Badezimmer</span>
+                    </div>
+                  </div>
+
+                  <h2 class="vc--sub--heading">geeignet für</h2>
+                  <div class="vc--listing--items--2">
+                    <div class="col-sm-6">
+                      <div
+                        class="vc--items--container my-1 justify-content-start"
+                      >
+                        <img
+                          src="./assets/img/icon/antihistamines.svg"
+                          alt=""
+                          class="vc--items--icon"
+                        />
+                        <span class="vc--items--text">Allergiker</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div
+                        class="vc--items--container my-1 justify-content-start"
+                      >
+                        <img
+                          src="./assets/img/icon/relax.svg"
+                          alt=""
+                          class="vc--items--icon"
+                        />
+                        <span class="vc--items--text">Erholungsurlaub</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div
+                        class="vc--items--container my-1 justify-content-start"
+                      >
+                        <img
+                          src="./assets/img/icon/wheel-chair.svg"
+                          alt=""
+                          class="vc--items--icon"
+                        />
+                        <span class="vc--items--text">Behindertengerecht</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div
+                        class="vc--items--container my-1 justify-content-start"
+                      >
+                        <img
+                          src="./assets/img/icon/cat.svg"
+                          alt=""
+                          class="vc--items--icon"
+                        />
+                        <span class="vc--items--text"
+                          >Ferien auf dem Bauernhof</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <h2 class="vc--main--heading mb-3">Kurzbeschreibung</h2>
+                  <div>
+                    <p class="vc-desc">
+                      Das Ferienhaus Susi ist liebevoll eingerichtet und hat
+                      eine große Terrasse mit schönem Seeblick. Die Lage auf der
+                      Sonnenterasse 13 bringt schon die frühe Morgensonne und
+                      ebenso die Abendsonne.
+                    </p>
+                    <p class="vc-desc">
+                      Das Haus ist ebenerdig und verfügt über einen
+                      Hauswirtschaftsraum mit Waschmaschine, Trockner,
+                      Wäscheständer und großem Eisschrank. Ein Holzkohlegrill
+                      und Terrassenmöbel sind vorhanden.
+                    </p>
+                    <p class="vc-desc">
+                      Die gemütlichen 2 Schlafzimmern und das große Wohnzimmer
+                      sind jeweils mit TV´s ausgestattet. Ebenso gibt es eine
+                      Leseecke im Wohnzimmer. Die schöne Wärmekabine und der
+                      Kamin im Wohnzimmer sorgen auch an kalten Tagen für einen
+                      erholsamen Urlaub. Für Kaminholz, Anzündhilfe ist gesorgt
+                      und alles im Preis inbegriffen.
+                    </p>
+                    <p class="vc-desc">
+                      Im Hof befinden sich 2 PKW-Stellplätze.
+                    </p>
+                    <p class="vc-desc">
+                      Die Südterrasse ist vollständig eingezäunt. Eine zweite
+                      Terrasse im Hofbereich ist überdacht und gibt Ihnen
+                      ungestörte Ruhe in Ihrem Urlaub am Waldsee.
+                    </p>
+                  </div>
+
+                  <h2 class="vc--main--heading mb-2 mt-4">Details zum Haus</h2>
+
+                  <div>
+                    <ul
+                      class="nav nav-tabs mb-3 custom--navtabs"
+                      role="tablist"
+                    >
+                      <div class="col-sm-6 col-md-3">
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link nav--tab--link nav--border active"
+                            id="hausregelns-tab"
+                            data-bs-toggle="tab"
+                            href="#hausregeln-tab"
+                            role="tab"
+                            aria-controls="hausregeln-tab"
+                            aria-selected="true"
+                            >Hausregeln</a
+                          >
+                        </li>
+                      </div>
+                      <div class="col-sm-6 col-md-3">
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link nav--tab--link nav--border"
+                            id="standorts-tab"
+                            data-bs-toggle="tab"
+                            href="#standort-tab"
+                            role="tab"
+                            aria-controls="standort-tab"
+                            aria-selected="false"
+                            >Standort</a
+                          >
+                        </li>
+                      </div>
+                      <div class="col-sm-6 col-md-3">
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link nav--tab--link nav--border"
+                            id="enternungens-tab"
+                            data-bs-toggle="tab"
+                            href="#enternungen-tab"
+                            role="tab"
+                            aria-controls="enternungen-tab"
+                            aria-selected="false"
+                            >Enternungen</a
+                          >
+                        </li>
+                      </div>
+                      <div class="col-sm-6 col-md-3">
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link nav--tab--link"
+                            id="wichtigeHinweises-tab"
+                            data-bs-toggle="tab"
+                            href="#wichtigeHinweise-tab"
+                            role="tab"
+                            aria-controls="wichtigeHinweise-tab"
+                            aria-selected="false"
+                            >Wichtige Hinweise</a
+                          >
+                        </li>
+                      </div>
+                    </ul>
+                    <div class="tab-content" id="ex1-content">
+                      <div
+                        class="tab-pane fade show active"
+                        id="hausregeln-tab"
+                        role="tabpanel"
+                        aria-labelledby="hausregelns-tab"
+                      >
+                        <div class="row">
+                          <div class="col-md-6 my-2">
+                            <div class="tab--detail--container">
+                              <span class="tab--detail--label">Arzt:</span>
+                              <span class="tab--detail--value">1 km</span>
+                            </div>
+                          </div>
+                          <div class="col-md-6 my-2">
+                            <div class="tab--detail--container">
+                              <span class="tab--detail--label">Ortsmitte:</span>
+                              <span class="tab--detail--value">1 km</span>
+                            </div>
+                          </div>
+                          <div class="col-md-6 my-2">
+                            <div class="tab--detail--container">
+                              <span class="tab--detail--label">Bus:</span>
+                              <span class="tab--detail--value">250 m</span>
+                            </div>
+                          </div>
+                          <div class="col-md-6 my-2">
+                            <div class="tab--detail--container">
+                              <span class="tab--detail--label"
+                                >Restaurant:</span
+                              >
+                              <span class="tab--detail--value">2 km</span>
+                            </div>
+                          </div>
+                          <div class="col-md-6 my-2">
+                            <div class="tab--detail--container">
+                              <span class="tab--detail--label">Wasser:</span>
+                              <span class="tab--detail--value">400 km</span>
+                            </div>
+                          </div>
+                          <div class="col-md-6 my-2">
+                            <div class="tab--detail--container">
+                              <span class="tab--detail--label"
+                                >Elinkaufsmoglichkei:</span
+                              >
+                              <span class="tab--detail--value">5 km</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="standort-tab"
+                        role="tabpanel"
+                        aria-labelledby="standorts-tab"
+                      >
+                        Standort
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="enternungen-tab"
+                        role="tabpanel"
+                        aria-labelledby="enternungens-tab"
+                      >
+                        Enternungen
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="wichtigeHinweise-tab"
+                        role="tabpanel"
+                        aria-labelledby="wichtigeHinweises-tab"
+                      >
+                        Wichtige Hinweise
+                      </div>
+                    </div>
+                  </div>
+
+                  <h2 class="vc--main--heading mb-2 mt-4">Zimmer-Merkmale</h2>
+
+                  <div>
+                    <ul
+                      class="nav nav-tabs mb-3 custom--navtabs"
+                      role="tablist"
+                    >
+                      <div class="col-sm-6 col-md-4">
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link nav--tab--link nav--border active"
+                            id="wohnzimmers-tab"
+                            data-bs-toggle="tab"
+                            href="#wohnzimmer-tab"
+                            role="tab"
+                            aria-controls="wohnzimmer-tab"
+                            aria-selected="true"
+                            >Wohnzimmer</a
+                          >
+                        </li>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link nav--tab--link nav--border"
+                            id="schlafzimmers-tab"
+                            data-bs-toggle="tab"
+                            href="#schlafzimmer-tab"
+                            role="tab"
+                            aria-controls="schlafzimmer-tab"
+                            aria-selected="false"
+                            >Schlafzimmer</a
+                          >
+                        </li>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link nav--tab--link"
+                            id="badezimmers-tab"
+                            data-bs-toggle="tab"
+                            href="#badezimmer-tab"
+                            role="tab"
+                            aria-controls="badezimmer-tab"
+                            aria-selected="false"
+                            >Badezimmer</a
+                          >
+                        </li>
+                      </div>
+                    </ul>
+                    <div class="tab-content" id="ex1-content">
+                      <div
+                        class="tab-pane fade show active"
+                        id="wohnzimmer-tab"
+                        role="tabpanel"
+                        aria-labelledby="wohnzimmers-tab"
+                      >
+                        <h2 class="vc--sub--heading mt-3">Wohnzimmer</h2>
+                        <div class="vc--listing--items--2 mb-3">
+                          <div class="col-sm-6">
+                            <div
+                              class="vc--items--container my-1 justify-content-start"
+                            >
+                              <img
+                                src="./assets/img/icon/music.svg"
+                                alt=""
+                                class="vc--items--icon"
+                              />
+                              <span class="vc--items--text"
+                                >Blue-Ray-Player</span
+                              >
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div
+                              class="vc--items--container my-1 justify-content-start"
+                            >
+                              <img
+                                src="./assets/img/icon/sofa.svg"
+                                alt=""
+                                class="vc--items--icon"
+                              />
+                              <span class="vc--items--text">Eckcouch</span>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div
+                              class="vc--items--container my-1 justify-content-start"
+                            >
+                              <img
+                                src="./assets/img/icon/fire-place.svg"
+                                alt=""
+                                class="vc--items--icon"
+                              />
+                              <span class="vc--items--text">Kaminofen</span>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div
+                              class="vc--items--container my-1 justify-content-start"
+                            >
+                              <img
+                                src="./assets/img/icon/double-bed.svg"
+                                alt=""
+                                class="vc--items--icon"
+                              />
+                              <span class="vc--items--text">Schlafcouch</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="schlafzimmer-tab"
+                        role="tabpanel"
+                        aria-labelledby="schlafzimmers-tab"
+                      >
+                        Schlafzimmer
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="badezimmer-tab"
+                        role="tabpanel"
+                        aria-labelledby="badezimmers-tab"
+                      >
+                        badezimmers
+                      </div>
+                    </div>
+                  </div>
+
+                  <h2 class="vc--sub--heading mt-1">
+                    Weitere Besonderheiten Wohnzimmer
+                  </h2>
+                  <p class="vc-desc">
+                    Das Wohnzimmer hat große Panoramafenster mit Seeblick
+                  </p>
+                  <h2 class="vc--sub--heading mt-1">
+                    Weitere Besonderheiten Schlafzimmer 1
+                  </h2>
+                  <p class="vc-desc">
+                    Das Schlafzimmer 1 ist mit hochwertigen Echtholzmöbel
+                    ausgestattet
+                  </p>
+
+                  <h2 class="vc--main--heading mb-2 mt-4">
+                    Andere Eigenschaften
+                  </h2>
+
+                  <div>
+                    <ul
+                      class="nav nav-tabs mb-3 custom--navtabs"
+                      role="tablist"
+                    >
+                      <div class="col-sm-6 col-md-3">
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link nav--tab--link nav--border active"
+                            id="aussenausstattungs-tab"
+                            data-bs-toggle="tab"
+                            href="#aussenausstattung-tab"
+                            role="tab"
+                            aria-controls="aussenausstattung-tab"
+                            aria-selected="true"
+                            >Aussenausstattung</a
+                          >
+                        </li>
+                      </div>
+                      <div class="col-sm-6 col-md-3">
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link nav--tab--link nav--border"
+                            id="wellnesseinrichtunges-tab"
+                            data-bs-toggle="tab"
+                            href="#wellnesseinrichtunge-tab"
+                            role="tab"
+                            aria-controls="wellnesseinrichtunge-tab"
+                            aria-selected="false"
+                            >Wellnesseinrichtunge</a
+                          >
+                        </li>
+                      </div>
+                      <div class="col-sm-6 col-md-3">
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link nav--tab--link nav--border"
+                            id="essenundTrinkens-tab"
+                            data-bs-toggle="tab"
+                            href="#essenundTrinken-tab"
+                            role="tab"
+                            aria-controls="essenundTrinken-tab"
+                            aria-selected="false"
+                            >Essen und Trinken</a
+                          >
+                        </li>
+                      </div>
+                      <div class="col-sm-6 col-md-3">
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link nav--tab--link"
+                            id="services-tab"
+                            data-bs-toggle="tab"
+                            href="#service-tab"
+                            role="tab"
+                            aria-controls="service-tab"
+                            aria-selected="false"
+                            >Service</a
+                          >
+                        </li>
+                      </div>
+                    </ul>
+                    <div class="tab-content" id="ex1-content">
+                      <div
+                        class="tab-pane fade show active"
+                        id="aussenausstattung-tab"
+                        role="tabpanel"
+                        aria-labelledby="aussenausstattungs-tab"
+                      >
+                        <h2 class="vc--sub--heading mt-3">Aussenausstattung</h2>
+                        <div class="vc--listing--items--2 mb-3">
+                          <div class="col-sm-6">
+                            <div
+                              class="vc--items--container my-1 justify-content-start"
+                            >
+                              <img
+                                src="./assets/img/icon/barbq.svg"
+                                alt=""
+                                class="vc--items--icon"
+                              />
+                              <span class="vc--items--text"
+                                >Grillmöglichkeit</span
+                              >
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div
+                              class="vc--items--container my-1 justify-content-start"
+                            >
+                              <img
+                                src="./assets/img/icon/charging.svg"
+                                alt=""
+                                class="vc--items--icon"
+                              />
+                              <span class="vc--items--text"
+                                >Ladestation (Wallbox) für E-Fahrzeuge</span
+                              >
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div
+                              class="vc--items--container my-1 justify-content-start"
+                            >
+                              <img
+                                src="./assets/img/icon/door.svg"
+                                alt=""
+                                class="vc--items--icon"
+                              />
+                              <span class="vc--items--text"
+                                >Separater Eingang</span
+                              >
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div
+                              class="vc--items--container my-1 justify-content-start"
+                            >
+                              <img
+                                src="./assets/img/icon/volleyball.svg"
+                                alt=""
+                                class="vc--items--icon"
+                              />
+                              <span class="vc--items--text"
+                                >Spiele für den Aussenbereich (Volleyball,
+                                Boccia, Federball..)</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <h2 class="vc--sub--heading mt-1">
+                          Weitere Besonderheiten Aussenausstattung
+                        </h2>
+                        <p class="vc-desc">
+                          Das Haus hat einen großen Parkplatz mit hauseigener
+                          Wallbox. 2 gemütliche Terrassen stehen Ihnen für einen
+                          erholsamen Urlaub zur Verfügung. Ebenso Gartenliegen,
+                          Sonnenschirm, Kugelgrill und eine Sitzgarnitur, sowie
+                          ein sehr gemütlicher Strandkorb.
+                        </p>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="wellnesseinrichtunge-tab"
+                        role="tabpanel"
+                        aria-labelledby="wellnesseinrichtunges-tab"
+                      >
+                        Wellnesseinrichtunge
+                      </div>
+
+                      <div
+                        class="tab-pane fade"
+                        id="essenundTrinken-tab"
+                        role="tabpanel"
+                        aria-labelledby="essenundTrinkens-tab"
+                      >
+                        Essen und Trinken
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="service-tab"
+                        role="tabpanel"
+                        aria-labelledby="services-tab"
+                      >
+                        Service
+                      </div>
+                    </div>
+                  </div>
+
+                  <h2 class="vc--main--heading mb-2 mt-4">
+                    Die Umgebung und andere Freizeitmöglichkeiten
+                  </h2>
+
+                  <div>
+                    <ul
+                      class="nav nav-tabs mb-3 custom--navtabs"
+                      role="tablist"
+                    >
+                      <div class="col-sm-6 col-md-6">
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link nav--tab--link nav--border active"
+                            id="umgebungs-tab"
+                            data-bs-toggle="tab"
+                            href="#umgebung-tab"
+                            role="tab"
+                            aria-controls="umgebung-tab"
+                            aria-selected="true"
+                            >Umgebung</a
+                          >
+                        </li>
+                      </div>
+                      <div class="col-sm-6 col-md-6">
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link nav--tab--link"
+                            id="Freizeitmöglichkeitens-tab"
+                            data-bs-toggle="tab"
+                            href="#Freizeitmöglichkeiten-tab"
+                            role="tab"
+                            aria-controls="Freizeitmöglichkeiten-tab"
+                            aria-selected="false"
+                            >Freizeitmöglichkeiten</a
+                          >
+                        </li>
+                      </div>
+                    </ul>
+                    <div class="tab-content" id="ex1-content">
+                      <div
+                        class="tab-pane fade show active"
+                        id="umgebung-tab"
+                        role="tabpanel"
+                        aria-labelledby="umgebungs-tab"
+                      >
+                        <h2 class="vc--sub--heading my-3">Die Umgebung</h2>
+
+                        <p class="vc-desc">
+                          AUSDB-Das Schloß Bürresheim (Drehort von
+                          Märchenfilmen) ist in unmittelbarer Nähe und auch in
+                          die kleine Einkaufsstadt Mayen sind es nur wenige
+                          Minuten (ca. 12 km). Bekannt aus dem Rennsport ist der
+                          Nürburgring, den man nach ca. 20 km erreicht. Wer
+                          gerne die Stadt Koblenz erkunden möchte, findet dort
+                          neben touristischen Highlights auch eine sehr schöne
+                          Altstadt mit vielen Einkaufsmöglichkeiten.
+                        </p>
+                        <p class="vc-desc">
+                          Der Laacher See ist ebenfalls in der Nähe und ist der
+                          größte See in Rheinland-Pfalz. Dort befindet sich auch
+                          eines der weltweit bedeutesten romanischen Bauwerke,
+                          die Abtei Maria Laach, mit eigener Klostergärtnerei,
+                          einem Hotelbetrieb, Aussenwirtschaft, Museum, Hofladen
+                          mit eigenen Produkten uvm.
+                        </p>
+                        <p class="vc-desc">
+                          Die Vulkaneifel ist sehr naturbelassen und birgt eine
+                          einzigartige Schönheit, das sind ihre kristallklaren
+                          Maare (ehemalige Vulkankegel, die sich im laufe der
+                          Jahrtausende mit Wasser gefüllt haben). Die Maare
+                          bieten zum Teil wunderschöne Badegelegenheiten und
+                          tolle Rundwege um den Vulkanrand. Im Vulkanpark Mayen
+                          erleben Sie eine sagenhafte Zeitreise und können
+                          interessante Exponate bewundern.
+                        </p>
+                        <p class="vc-desc">
+                          Der Vulkanismus wird erklärt und man bekommt sehr
+                          viele Infos, die anschaulich an zahlreichen
+                          Ausstellungsstücken präsentiert werden - es ist ein
+                          schönes Erlebnis für jung und alt. Die Vulkanbrauerei
+                          Mendig kann besichtigt werden und hier gibt es auch
+                          eine schöne Innen- und Aussengastronomie. Wer gerne in
+                          den Zoo möchte, ist auch schnell in Neuwied und kann
+                          dort einen schönen Tag verbringen.
+                        </p>
+                        <p class="vc-desc">
+                          Dieser Zoo ist recht ursprünglich und bietet zudem
+                          noch einen herrlichen Ausblick auf das Neuwieder
+                          Becken (Rheinlandschaft um Neuwied). Das
+                          mittelalterliche Eifelstädtchen Monreal ist bekannt
+                          als Filmkulisse von Krimis und Actionserien. Ein
+                          Auflug an Mosel und Rhein ist ebenfalls sehr
+                          lohnenswert. Hier können Sie zum Beispiel von Koblenz
+                          aus starten.
+                        </p>
+                        <p class="vc-desc">
+                          Dort fließen am deutschen Eck die beiden Flüsse Rhein
+                          und Mosel zusammen und machen sich dann auf den Weg in
+                          die Nordsee. Auch die imposante Festung
+                          Ehrenbreitstein mit Museum, Gastronomie und einem
+                          traumhaften Blick über Koblenz, Rhein & Mosel, können
+                          Sie in Koblenz mit der Gondel oder mit dem PKW
+                          anfahren und besichtigen.
+                        </p>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="Freizeitmöglichkeiten-tab"
+                        role="tabpanel"
+                        aria-labelledby="Freizeitmöglichkeitens-tab"
+                      >
+                        Freizeitmöglichkeiten
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="vc--customer--review mt-5">
+                    <div class="vc--user--details">
+                      <div>
+                        <img
+                          src="./assets/img/user-1.png"
+                          alt=""
+                          class="vc--user--img"
+                        />
+                      </div>
+                      <div class="vc--user--name-container">
+                        <span class="vc--user--name">Raimund Hahn</span>
+                        <span class="vc--user--review--date"
+                          >Mitglied selt April 2016.</span
+                        >
+                      </div>
+                    </div>
+                    <div class="vc--review--container">
+                      <div class="verified--container">
+                        <img
+                          src="./assets/img/icon/verify.svg"
+                          alt=""
+                          class="vc--verify--image"
+                        />
+                        <span class="vc--verify--message"
+                          >Identitat verifiziert</span
+                        >
+                      </div>
+                      <div class="review--container">
+                        <div class="vc--stars">
+                          <img src="./assets/img/icon/star.svg" alt="" />
+                          <img src="./assets/img/icon/star.svg" alt="" />
+                          <img src="./assets/img/icon/star.svg" alt="" />
+                          <img src="./assets/img/icon/star.svg" alt="" />
+                          <img src="./assets/img/icon/star.svg" alt="" />
+                        </div>
+                        <span class="vc--ttl--reviews">40 reviews</span>
+                      </div>
+                    </div>
+
+                    <div class="my-3">
+                      <p class="vc-desc">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.It has
+                        survived not only five centuries, but also the leap into
+                        electronic typesetting, remaining essentially unchanged.
+                      </p>
+                      <p class="vc-desc">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. Lorem Ipsum
+                        has been the industry's standard dummy text ever since
+                        the 1500s.
+                      </p>
+                    </div>
+                    <div>
+                      <a href="#" class="vc-reviews--btn fw-bold">
+                        Raimund kontaktieren
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <h2 class="vc--main--heading mb-2 mt-4">
+                    Standort des Ferienhauses
+                  </h2>
+
+                  <div>
+                    <div id="map"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-4 my-md-5">
+                <div class="vc--highlights--containers">
+                  <h2 class="vc--sub--heading">Highlights</h2>
+                  <div class="vc-highlights">
+                    <span class="vc--highlights--icon"
+                      ><i class="fa-solid fa-circle-check"></i
+                    ></span>
+                    <span class="vc--highlights--text"
+                      >eingezäunte Terrasse mit Strandkorb</span
+                    >
+                  </div>
+                  <div class="vc-highlights">
+                    <span class="vc--highlights--icon"
+                      ><i class="fa-solid fa-circle-check"></i
+                    ></span>
+                    <span class="vc--highlights--text"
+                      >keine Zusatzkosten für Hunde</span
+                    >
+                  </div>
+                  <div class="vc-highlights">
+                    <span class="vc--highlights--icon"
+                      ><i class="fa-solid fa-circle-check"></i
+                    ></span>
+                    <span class="vc--highlights--text"
+                      >Seeblick und hundefreundliche Restaurants</span
+                    >
+                  </div>
+                  <div class="vc-highlights">
+                    <span class="vc--highlights--icon"
+                      ><i class="fa-solid fa-circle-check"></i
+                    ></span>
+                    <span class="vc--highlights--text"
+                      >Hundenäpfe / Leckerli zur Begrüßung</span
+                    >
+                  </div>
+                  <div class="vc-highlights">
+                    <span class="vc--highlights--icon"
+                      ><i class="fa-solid fa-circle-check"></i
+                    ></span>
+                    <span class="vc--highlights--text"
+                      >kleiner ruhiger und individueller Park</span
+                    >
+                  </div>
+                </div>
+
+                <div class="vc--total--Guest--container">
+                  <div class="">
+                    <span class="vc--ttl--price">€135,00</span>
+                    <span class="vc--ttl--message">pro Nacht</span>
+                  </div>
+                  <div class="panel-dropdown">
+                    <a href="#"
+                      >Gäste <span class="qtyTotal" name="qtyTotal">1</span></a
+                    >
+                    <div class="panel-dropdown-content" style="width: 100%">
+                      <!-- Quantity Buttons -->
+                      <div class="qtyButtons">
+                        <div class="qtyTitle">Adults</div>
+                        <input type="text" name="qtyInput" value="1" />
+                      </div>
+
+                      <div class="qtyButtons">
+                        <div class="qtyTitle">Childrens</div>
+                        <input type="text" name="qtyInput" value="0" />
+                      </div>
+                    </div>
+
+                    <div class="date--range--picker--container">
+                      <input
+                        type="date"
+                        class="date--range--picker"
+                        placeholder="Date"
+                      />
+                    </div>
+                    <div class="mt-4">
+                      <button class="btn header-btn" style="min-width: 100%">
+                        Buchungsanfrage stellen
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- End Section Magazine Container  -->
+
+      <!-- start of Footer -->
+      <footer>
+        <div class="content--container">
+          <div class="footer--container">
+            <div class="row w-100 footer--section m-0">
+              <div
+                class="col-xl-3 col-lg-3 col-md-6 col-sm-6 footer-section--1 my-md-3 my-sm-3 p-0"
+              >
+                <div>
+                  <img
+                    src="./assets/img/logo.png"
+                    alt=""
+                    class="footer--logo"
+                  />
+                  <p class="footer--about">
+                    Drei kreative Köpfe mit Leidenschaft für Ferienwohnungen,
+                    präsentieren ihre Angebote auf unserer Plattform mit
+                    sicheren Funktionen.
+                  </p>
+                  <div class="footer--social-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 my-md-3 my-sm-3">
+                <div class="row">
+                  <div class="col-md-5 col-sm-5 link--container">
+                    <ul class="footer--links">
+                      <li class="footer--links--head">Navigation</li>
+                      <li>Startseite</li>
+                      <li>Kontakt</li>
+                      <li>Über uns</li>
+                      <li>Magazin</li>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-7 col-sm-7 link--container">
+                    <ul class="footer--links">
+                      <li class="footer--links--head">Vermieter werden</li>
+                      <li>Login</li>
+                      <li>Preise</li>
+                      <li>Vermieter Blog</li>
+                      <li>Jetzt Registrieren</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 my-md-3 my-sm-3">
+                <div class="row">
+                  <div class="col-md-6 col-sm-5 link--container">
+                    <ul class="footer--links">
+                      <li class="footer--links--head">Regionen</li>
+                      <li>Ahrtal</li>
+                      <li>Eifel</li>
+                      <li>Hunsrück</li>
+                      <li>Mittelrhein</li>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-6 col-sm-7 link--container">
+                    <ul class="footer--links">
+                      <li
+                        class="footer--links--head"
+                        style="visibility: hidden"
+                      >
+                        Regionen
+                      </li>
+                      <li>Mosel</li>
+                      <li>Pfalz</li>
+                      <li>Rheinhessen</li>
+                      <li>Westerwald</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-xl-3 col-lg-3 col-md-6 col-sm-6 footer-section--2 text-end my-md-3 my-sm-3 p-0"
+              >
+                <div>
+                  <h4 class="footer--feature">Vermieter werden</h4>
+                  <p class="footer--about">
+                    Werden Sie Vermieter bei uns und profitieren Sie von
+                    zahlreichen Vorteilen! Wir erhöhen Ihre Auslastung und
+                    steigern Ihr Einkommen.
+                  </p>
+                  <div class="pt-2">
+                    <a href="#" class="footer--btn">Jetzt registrieren</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr class="text-white mt-5 mb-4" />
+
+            <div class="footer--copyright--section">
+              <div class="footer--copyright--link">
+                <ul>
+                  <li class="mx-3">Impressum</li>
+                  <li class="mx-3">Datenschutz</li>
+                  <li class="mx-3">Haftungsausschluss</li>
+                  <li class="mx-3">Support</li>
+                </ul>
+              </div>
+              <div>
+                <span class="copyright"
+                  >© Copyright 2023, All Rights Reserved</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+    </div>
+
+    <!-- Jquery Cdn -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Swipper Js -->
+    <script src="./assets/plugins/swipper/swiper-bundle.min.js"></script>
+    <!-- chosen JS -->
+    <script src="./assets/plugins/chosen/chosen.js"></script>
+    <!-- chosen JS -->
+    <script src="./assets/plugins/quantiy/quantityButtons.js"></script>
+    <script src="./assets/plugins/quantiy/dropzone.js"></script>
+    <!-- Leaflet js -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <!-- Custom JS -->
+    <script src="./assets/script/script.js"></script>
+
+    <script>
+      let exSwipper;
+      let showSlider = function (slide, modal, body) {
+        document.querySelector('.expand-slider-modal').style.display = modal;
+        document.querySelector('body').style.overflowY = body;
+        console.log(slide);
+        exSwipper = new Swiper('.ex-mySwiper', {
+          initialSlide: 5,
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          allowSlideNext: true,
+          allowSlidePrev: true,
+          allowTouchMove: true,
+          pagination: {
+            el: '.ex-swiper-pagination',
+            type: 'fraction',
+          },
+          keyboard: {
+            enabled: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      };
+      showSlider(5, 'none', 'auto');
+
+      document
+        .querySelector('#expand-gallery')
+        .addEventListener('click', function () {
+          showSlider(5, 'block', 'hidden');
+        });
+      document
+        .querySelector('.expand-slider-modal-close')
+        .addEventListener('click', function () {
+          exSwipper.destroy();
+          document.querySelector('.expand-slider-modal').style.display = 'none';
+          document.querySelector('body').style.overflowY = 'auto';
+        });
+
+      const map = L.map('map').setView([51.505, -0.09], 16);
+
+      var tiles = L.tileLayer(
+        'http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}',
+        {
+          maxZoom: 14,
+          subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+        }
+      ).addTo(map);
+
+      const marker = L.marker([51.5, -0.09]).addTo(map);
+
+      /*----------------------------------------------------*/
+      /* Panel Dropdown
+	/*----------------------------------------------------*/
+      function close_panel_dropdown() {
+        $('.panel-dropdown').removeClass('active');
+        $('.fs-inner-container.content').removeClass('faded-out');
+      }
+
+      $('.panel-dropdown a').on('click', function (e) {
+        if ($(this).parent().is('.active')) {
+          close_panel_dropdown();
+        } else {
+          close_panel_dropdown();
+          $(this).parent().addClass('active');
+          $('.fs-inner-container.content').addClass('faded-out');
+        }
+
+        e.preventDefault();
+      });
+
+      // Apply / Close buttons
+      $('.panel-buttons button').on('click', function (e) {
+        $('.panel-dropdown').removeClass('active');
+        $('.fs-inner-container.content').removeClass('faded-out');
+      });
+
+      // Closes dropdown on click outside the conatainer
+      var mouse_is_inside = false;
+
+      $('.panel-dropdown').hover(
+        function () {
+          mouse_is_inside = true;
+        },
+        function () {
+          mouse_is_inside = false;
+        }
+      );
+
+      $('body').mouseup(function () {
+        if (!mouse_is_inside) close_panel_dropdown();
+      });
+
+      // "All" checkbox
+      $('.checkboxes.categories input').on('change', function () {
+        if ($(this).hasClass('all')) {
+          $(this).parents('.checkboxes').find('input').prop('checked', false);
+          $(this).prop('checked', true);
+        } else {
+          $('.checkboxes input.all').prop('checked', false);
+        }
+      });
+
+      /*-----------------------------------
+
+      /* $(function () {
+         $('#date-picker').daterangepicker({
+           opens: 'left',
+           // singleDatePicker: true,
+
+           // Disabling Date Ranges
+           isInvalidDate: function (date) {
+             // Disabling Date Range
+             var disabled_start = moment('09/02/2018', 'MM/DD/YYYY');
+             var disabled_end = moment('09/06/2018', 'MM/DD/YYYY');
+             return date.isAfter(disabled_start) && date.isBefore(disabled_end);
+
+             // Disabling Single Day
+             // if (date.format('MM/DD/YYYY') == '08/08/2018') {
+             //     return true;
+             // }
+           },
+         });
+       });
+
+       // Calendar animation
+       $('#date-picker').on(
+         'showCalendar.daterangepicker',
+         function (ev, picker) {
+           $('.daterangepicker').addClass('calendar-animated');
+         }
+       );
+       $('#date-picker').on('show.daterangepicker', function (ev, picker) {
+         $('.daterangepicker').addClass('calendar-visible');
+         $('.daterangepicker').removeClass('calendar-hidden');
+       });
+       $('#date-picker').on('hide.daterangepicker', function (ev, picker) {
+         $('.daterangepicker').removeClass('calendar-visible');
+         $('.daterangepicker').addClass('calendar-hidden');
+       }); */
+    </script>
+  </body>
+</html>
