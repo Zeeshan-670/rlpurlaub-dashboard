@@ -40,6 +40,11 @@ a:hover {
   color: inherit;
 }
 
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .wrapper {
   width: 100%;
   height: 100vh;
@@ -5151,7 +5156,7 @@ div.footer--social-icon > i {
 }
 
 /* Dashboard Footer */
-  
+
 .dash--footer {
   background: #f4faf8;
 }
@@ -5166,4 +5171,191 @@ div.footer--social-icon > i {
   font-size: 14px;
   line-height: 21px;
   color: #2d6851;
+}
+
+/* Order Page Code Start Here */
+
+#msform {
+  text-align: center;
+  position: relative;
+  /* margin-top: 20px; */
+}
+
+#msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-card {
+  text-align: left;
+}
+
+#msform fieldset:not(:first-of-type) {
+  display: none;
+}
+
+#msform input,
+#msform textarea {
+  padding: 8px 15px 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 25px;
+  margin-top: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #2c3e50;
+  background-color: #eceff1;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+#msform input:focus,
+#msform textarea:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid #2d6851;
+  outline-width: 0;
+}
+
+#msform .action-button {
+  width: 100px;
+  background: #2d6851;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 0px 10px 5px;
+  float: right;
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+  background-color: #311b92;
+}
+
+#msform .action-button-previous {
+  width: 100px;
+  background: #616161;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px 10px 0px;
+  float: right;
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+  background-color: #000000;
+}
+
+.order--card {
+  z-index: 0;
+  border: none;
+  position: relative;
+  max-width: 592px;
+  width: 100%;
+}
+
+.fs-title {
+  font-size: 25px;
+  color: #2d6851;
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.purple-text {
+  color: #2d6851;
+  font-weight: normal;
+}
+
+.fieldlabels {
+  color: gray;
+  text-align: left;
+}
+
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey;
+  padding: 0;
+}
+
+#progressbar .active {
+  color: #2d6851;
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 15px;
+  width: 50%;
+  float: left;
+  position: relative;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#progressbar li span.ball:before {
+  content: '';
+  display: block;
+  font-size: 20px;
+  border: 4px solid white;
+  border-top: none;
+  border-bottom: none;
+  color: #ffffff;
+  border-radius: 50%;
+  margin: -5px auto 10px auto;
+  /* padding: 2px; */
+  width: 23px;
+  height: 16px;
+  background: #bec3c1;
+}
+
+#progressbar li span.ball:after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 44px;
+  z-index: -1;
+}
+
+#progressbar li.active span.ball:before,
+#progressbar li.active span.ball:after {
+  background: #2d6851;
+}
+#progressbar li.active strong {
+  color: #2d6851;
+}
+/* #progressbar li.active .ball{
+                color:red
+              } */
+
+.progress {
+  height: 20px;
+}
+
+.progress-bar {
+  background-color: #2d6851;
+}
+
+.fit-image {
+  width: 100%;
+  object-fit: cover;
 }

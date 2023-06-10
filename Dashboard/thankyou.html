@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+
+    <link
+      rel="stylesheet"
+      href="./assets/plugins/bootstrap/css/bootstrap.min.css"
+    />
+
+    <!-- Font Awesome CDN -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Swipper JS -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- Chosen CSS -->
+
+    <link rel="stylesheet" href="./assets/plugins/chosen/chosen.css" />
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>rlp-urlaub.de &#8211; Rheinland-Pfalz Urlaubsportal</title>
+  </head>
+
+  <body>
+    <!-- Page Wrapper -->
+
+    <div class="wrapper">
+      <!-- Navbar & Header -->
+
+      <header class="header position-relative">
+        <!-- Start Navbar -->
+
+        <div class="content--container">
+          <!-- <b class="screen-overlay"></b> -->
+
+          <div class="header-inner">
+            <nav class="navbar2 navbar d-lg-none navbar-expand-lg my-3">
+              <div
+                class="content--container d-flex justify-content-between align-items-center"
+              >
+                <a class="navbar-brand fw-bold" href="#"
+                  ><img
+                    src="./assets/img/logo--dark.png"
+                    class="img-fluid"
+                    alt=""
+                /></a>
+
+                <button
+                  class="navbar-toggler navbar-toggler--dark"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-trigger="#navbar_main"
+                  aria-controls="sidebar"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+
+              <hr class="text-white w-100" />
+
+              <div class="content--container">
+                <ul class="navbar-nav navbar-nav--2 mb-2 mb-lg-0 nav--list-2">
+                  <li class="nav-item" style="margin-right: 5px">
+                    <a class="nav-link nav-link-icon nav-link--dark" href="#"
+                      ><i class="fa-regular fa-heart"></i
+                    ></a>
+                  </li>
+
+                  <div class="d-flex">
+                    <li class="nav-item mx-3">
+                      <a class="nav-link nav-link--dark" href="#">Einloggen</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <button class="btn header-btn">
+                        Ferlenunterkunft vermieten
+                      </button>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+            </nav>
+
+            <div class="container-fluid p-0">
+              <nav
+                id="navbar_main"
+                class="navbar mobile-offcanvas navbar-expand-lg py-3"
+              >
+                <div class="container-fluid p-0">
+                  <a class="navbar-brand fw-bold d-none d-lg-flex" href="#"
+                    ><img
+                      src="./assets/img/logo--dark.png"
+                      class="img-fluid"
+                      alt=""
+                  /></a>
+
+                  <a class="navbar-brand fw-bold" href="#"
+                    ><img
+                      src="./assets/img/logo.png"
+                      class="img-fluid d-lg-none"
+                      alt=""
+                  /></a>
+
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-trigger="#navbar_main"
+                    aria-controls="sidebar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span><i class="fa-solid fa-close"></i></span>
+                  </button>
+
+                  <div
+                    class="navbar-collapse justify-content-end collapse show my--md--5"
+                    id="navbarSupportedContent"
+                  >
+                    <ul class="navbar-nav mb-2 mb-lg-0 nav--list-1">
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle navlink--margin nav-link--dark"
+                          href="#"
+                          id="navbarDropdownMenuLink"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Urlaubscregionen
+                        </a>
+
+                        <div
+                          class="dropdown-menu navlink--margin"
+                          aria-labelledby="navbarDropdownMenuLink"
+                        >
+                          <a class="dropdown-item" href="#">Ahrtal</a>
+
+                          <a class="dropdown-item" href="#">Eifel</a>
+
+                          <a class="dropdown-item" href="#">Lahn</a>
+
+                          <a class="dropdown-item" href="#">Hunsrück</a>
+
+                          <a class="dropdown-item" href="#">Lahntal</a>
+
+                          <a class="dropdown-item" href="#">Mittelrhein</a>
+
+                          <a class="dropdown-item" href="#">Mosel</a>
+
+                          <a class="dropdown-item" href="#">Nahe</a>
+
+                          <a class="dropdown-item" href="#">Pfalz</a>
+
+                          <a class="dropdown-item" href="#">Rheinhessen</a>
+
+                          <a class="dropdown-item" href="#">Westerwald</a>
+                        </div>
+                      </li>
+
+                      <li class="nav-item navlink--margin">
+                        <a class="nav-link nav-link--dark" href="#"
+                          >Last-Minute</a
+                        >
+                      </li>
+
+                      <li class="nav-item navlink--margin">
+                        <a class="nav-link nav-link--dark" href="#">Magazin</a>
+                      </li>
+                    </ul>
+
+                    <hr class="nav-link--dark nav-seprater" />
+
+                    <ul
+                      class="navbar-nav mb-2 mb-lg-0 nav--list-2 d-none d-lg-flex"
+                    >
+                      <li class="nav-item navlink--margin">
+                        <a
+                          class="nav-link nav-link-icon nav-link--dark"
+                          href="#"
+                          ><i class="fa-regular fa-heart"></i
+                        ></a>
+                      </li>
+
+                      <li
+                        class="nav-item navlink--margin"
+                        style="visibility: hidden"
+                      >
+                        <a class="nav-link nav-link--dark" href="#"
+                          >Einloggen</a
+                        >
+                      </li>
+
+                      <li class="nav-item navlink--margin--l">
+                        <button class="btn header-btn">
+                          Ferlenunterkunft vermieten
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <!-- End Navbar -->
+      </header>
+
+      <!-- start of Footer -->
+
+      <footer class="d-none">
+        <div class="content--container">
+          <div class="footer--container">
+            <div class="row w-100 footer--section m-0">
+              <div
+                class="col-xl-3 col-lg-3 col-md-6 col-sm-6 footer-section--1 my-md-3 my-sm-3 p-0"
+              >
+                <div>
+                  <img
+                    src="./assets/img/logo.png"
+                    alt=""
+                    class="footer--logo"
+                  />
+
+                  <p class="footer--about">
+                    Drei kreative Köpfe mit Leidenschaft für Ferienwohnungen,
+                    präsentieren ihre Angebote auf unserer Plattform mit
+                    sicheren Funktionen.
+                  </p>
+
+                  <div class="footer--social-icon">
+                    <i class="fa-brands fa-instagram"></i>
+
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 my-md-3 my-sm-3">
+                <div class="row">
+                  <div class="col-md-5 col-sm-5 link--container">
+                    <ul class="footer--links">
+                      <li class="footer--links--head">Navigation</li>
+
+                      <li>Startseite</li>
+
+                      <li>Kontakt</li>
+
+                      <li>Über uns</li>
+
+                      <li>Magazin</li>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-7 col-sm-7 link--container">
+                    <ul class="footer--links">
+                      <li class="footer--links--head">Vermieter werden</li>
+
+                      <li>Login</li>
+
+                      <li>Preise</li>
+
+                      <li>Vermieter Blog</li>
+
+                      <li>Jetzt Registrieren</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 my-md-3 my-sm-3">
+                <div class="row">
+                  <div class="col-md-6 col-sm-5 link--container">
+                    <ul class="footer--links">
+                      <li class="footer--links--head">Regionen</li>
+
+                      <li>Ahrtal</li>
+
+                      <li>Eifel</li>
+
+                      <li>Hunsrück</li>
+
+                      <li>Mittelrhein</li>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-6 col-sm-7 link--container">
+                    <ul class="footer--links">
+                      <li
+                        class="footer--links--head"
+                        style="visibility: hidden"
+                      >
+                        Regionen
+                      </li>
+
+                      <li>Mosel</li>
+
+                      <li>Pfalz</li>
+
+                      <li>Rheinhessen</li>
+
+                      <li>Westerwald</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-xl-3 col-lg-3 col-md-6 col-sm-6 footer-section--2 text-end my-md-3 my-sm-3 p-0"
+              >
+                <div>
+                  <h4 class="footer--feature">Vermieter werden</h4>
+
+                  <p class="footer--about">
+                    Werden Sie Vermieter bei uns und profitieren Sie von
+                    zahlreichen Vorteilen! Wir erhöhen Ihre Auslastung und
+                    steigern Ihr Einkommen.
+                  </p>
+
+                  <div class="pt-2">
+                    <a href="#" class="footer--btn">Jetzt registrieren</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr class="text-white mt-5 mb-4" />
+
+            <div class="footer--copyright--section">
+              <div class="footer--copyright--link">
+                <ul>
+                  <li class="mx-3">Impressum</li>
+
+                  <li class="mx-3">Datenschutz</li>
+
+                  <li class="mx-3">Haftungsausschluss</li>
+
+                  <li class="mx-3">Support</li>
+                </ul>
+              </div>
+
+              <div>
+                <span class="copyright"
+                  >© Copyright 2023, All Rights Reserved</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- End of Footer -->
+    </div>
+
+    <!-- Jquery Cdn -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap JS -->
+
+    <script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Swipper Js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- chosen JS -->
+
+    <script src="./assets/plugins/chosen/chosen.js"></script>
+
+    <!-- Custom JS -->
+
+    <script src="./assets/script/script.js"></script>
+
+    <script></script>
+  </body>
+</html>
