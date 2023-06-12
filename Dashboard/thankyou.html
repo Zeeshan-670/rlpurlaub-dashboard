@@ -226,9 +226,30 @@
         <!-- End Navbar -->
       </header>
 
+      <section class="magazine--container position-relative">
+        <div class="back-shadow"></div>
+        <div class="content--container">
+          <div class="magazine--content--container p-0 position-relative">
+            <div class="thanks--container">
+              <div>
+                <img src="./assets/img/icon/check_circle.svg" alt="" />
+              </div>
+              <h1 class="thanks--heading">Vielen Dank für Ihre Buchung!</h1>
+              <p class="thanks--para">
+                Sie erhalten in Kürze eine E-Mail mit weiteren Informationen
+                sowie Login-Daten an Ihre angegebene E-Mail Adresse.
+              </p>
+
+              <button class="btn thanks--btn">Rechnung ansehen</button>
+            </div>
+          </div>
+        </div>
+        <div class="back-shadow-1"></div>
+      </section>
+
       <!-- start of Footer -->
 
-      <footer class="d-none">
+      <footer style="margin-top: 10px">
         <div class="content--container">
           <div class="footer--container">
             <div class="row w-100 footer--section m-0">
@@ -392,6 +413,26 @@
 
     <script src="./assets/script/script.js"></script>
 
-    <script></script>
+    <script>
+      // Dropdown
+      $(document).ready(function () {
+        $('.navbar .dropdown').hover(
+          function () {
+            $(this)
+              .find('.dropdown-menu')
+              .first()
+              .stop(true, true)
+              .slideDown(150);
+          },
+          function () {
+            $(this)
+              .find('.dropdown-menu')
+              .first()
+              .stop(true, true)
+              .slideUp(105);
+          }
+        );
+      });
+    </script>
   </body>
 </html>

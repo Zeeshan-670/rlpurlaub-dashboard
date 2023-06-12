@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+
+    <link
+      rel="stylesheet"
+      href="./assets/plugins/bootstrap/css/bootstrap.min.css"
+    />
+
+    <!-- Font Awesome CDN -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Swipper JS -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- Chosen CSS -->
+
+    <link rel="stylesheet" href="./assets/plugins/chosen/chosen.css" />
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>rlp-urlaub.de &#8211; Rheinland-Pfalz Urlaubsportal</title>
+  </head>
+
+  <body>
+    <!-- Page Wrapper -->
+
+    <div class="wrapper">
+      <!-- Navbar & Header -->
+
+      <header
+        class="header position-relative"
+        style="background-color: #edf7f3; height: 90px"
+      >
+        <!-- Start Navbar -->
+
+        <div class="content--container">
+          <!-- <b class="screen-overlay"></b> -->
+
+          <div class="header-inner">
+            <nav class="navbar2 navbar d-lg-none navbar-expand-lg my-3">
+              <div
+                class="content--container d-flex justify-content-between align-items-center"
+              >
+                <a class="navbar-brand fw-bold" href="#"
+                  ><img
+                    src="./assets/img/logo--dark.png"
+                    class="img-fluid"
+                    alt=""
+                /></a>
+                <button class="btn header-btn">
+                  Ferienunterkunft inserieren
+                </button>
+              </div>
+            </nav>
+
+            <div class="container-fluid p-0">
+              <nav
+                id="navbar_main"
+                class="navbar mobile-offcanvas navbar-expand-lg py-3"
+              >
+                <div class="container-fluid p-0">
+                  <a class="navbar-brand fw-bold d-none d-lg-flex" href="#"
+                    ><img
+                      src="./assets/img/logo--dark.png"
+                      class="img-fluid"
+                      alt=""
+                  /></a>
+
+                  <a class="navbar-brand fw-bold" href="#"
+                    ><img
+                      src="./assets/img/logo.png"
+                      class="img-fluid d-lg-none"
+                      alt=""
+                  /></a>
+
+                  <div
+                    class="navbar-collapse justify-content-end collapse show my--md--5"
+                    id="navbarSupportedContent"
+                  >
+                    <ul
+                      class="navbar-nav mb-2 mb-lg-0 nav--list-2 d-none d-lg-flex"
+                    >
+                      <li class="nav-item navlink--margin--l">
+                        <button class="btn header-btn">
+                          Ferienunterkunft inserieren
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <!-- End Navbar -->
+      </header>
+
+      <section class="magazine--container pt-5 position-relative">
+        <div class="content--container">
+          <div class="magazine--content--container pt-2 p-0 position-relative">
+            <h1 class="price--main--head">Unterkunftspreise</h1>
+
+            <div class="price--card--container my-5 pt-3">
+              <div class="price--card" style="transform: scale(1)">
+                <div class="price--card--head">
+                  <h6 class="package--type">Basis Paket</h6>
+                  <div>
+                    <span class="package--price">180 €</span>
+                    <span class="package--price--for"> pro Jahr</span>
+                  </div>
+                </div>
+                <div class="price--card--body">
+                  <div class="tick--container">
+                    <div class="tbl-highlights mb-2">
+                      <span class="tbl--highlights--icon"
+                        ><i class="fa-solid fa-circle-check"></i
+                      ></span>
+                      <span class="tbl--highlights--text"
+                        >1 Inserat/Unterkunft</span
+                      >
+                    </div>
+                    <div class="tbl-highlights mb-2">
+                      <span class="tbl--highlights--icon"
+                        ><i class="fa-solid fa-circle-check"></i
+                      ></span>
+                      <span class="tbl--highlights--text"
+                        >12 Monate sichtbar</span
+                      >
+                    </div>
+                    <div class="tbl-highlights mb-2">
+                      <span class="tbl--highlights--icon"
+                        ><i class="fa-solid fa-circle-check"></i
+                      ></span>
+                      <span class="tbl--highlights--text">Basis Support</span>
+                    </div>
+                    <div class="tbl-highlights mb-2">
+                      <span class="tbl--highlights--icon"
+                        ><i class="fa-solid fa-circle-check"></i
+                      ></span>
+                      <span class="tbl--highlights--text"
+                        >jede weitere Unterkunft 10 €/mtl.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="price--card--footer">
+                  <button class="btn price--card--footerbtn">
+                    Jetzt buchen
+                  </button>
+                </div>
+              </div>
+              <div
+                class="price--card"
+                style="transform: scale(1.1); z-index: 1"
+              >
+                <div
+                  class="price--card--head premium--package position-relative"
+                >
+                  <h6 class="package--type">Premium Paket</h6>
+                  <div>
+                    <span class="package--price">240 €</span>
+                    <span class="package--price--for"> pro Jahr</span>
+                  </div>
+                  <small class="line--through"
+                    >Normalpreis: 348 € pro Jahr
+                  </small>
+
+                  <div class="price--tag--container">
+                    <div id="price--tag">
+                      <span class="price--tag--text">Beliebtestes </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="price--card--body">
+                  <div class="tick--container">
+                    <div class="tbl-highlights mb-2">
+                      <span class="tbl--highlights--icon"
+                        ><i class="fa-solid fa-circle-check"></i
+                      ></span>
+                      <span class="tbl--highlights--text"
+                        >1 Inserat/Unterkunft</span
+                      >
+                    </div>
+                    <div class="tbl-highlights mb-2">
+                      <span class="tbl--highlights--icon"
+                        ><i class="fa-solid fa-circle-check"></i
+                      ></span>
+                      <span class="tbl--highlights--text"
+                        >12 Monate sichtbar</span
+                      >
+                    </div>
+                    <div class="tbl-highlights mb-2">
+                      <span class="tbl--highlights--icon"
+                        ><i class="fa-solid fa-circle-check"></i
+                      ></span>
+                      <span class="tbl--highlights--text">Premium Support</span>
+                    </div>
+                    <div class="tbl-highlights mb-2">
+                      <span class="tbl--highlights--icon"
+                        ><i class="fa-solid fa-circle-check"></i
+                      ></span>
+                      <span class="tbl--highlights--text"
+                        >1 Objekt als Highlight gekennzeichnet</span
+                      >
+                    </div>
+                    <div class="tbl-highlights mb-2">
+                      <span class="tbl--highlights--icon"
+                        ><i class="fa-solid fa-circle-check"></i
+                      ></span>
+                      <span class="tbl--highlights--text"
+                        >1 Objekt mit Website Link</span
+                      >
+                    </div>
+                    <div class="tbl-highlights mb-2">
+                      <span class="tbl--highlights--icon"
+                        ><i class="fa-solid fa-circle-check"></i
+                      ></span>
+                      <span class="tbl--highlights--text"
+                        >jede weitere Unterkunft 7,50 €/mtl.</span
+                      >
+                    </div>
+                    <!-- </div> -->
+                  </div>
+                </div>
+                <div class="price--card--footer">
+                  <button class="btn price--card--footerbtn">
+                    Jetzt buchen
+                  </button>
+                </div>
+              </div>
+              <div class="price--card" style="transform: scale(1)">
+                <div class="price--card--head platinum--package">
+                  <h6 class="package--type">Platinum Paket</h6>
+                  <div>
+                    <span class="package--price">360 €</span>
+                    <span class="package--price--for"> pro Jahr</span>
+                  </div>
+                  <small class="line--through"
+                    >Normalpreis: 348 € pro Jahr
+                  </small>
+                </div>
+                <div class="price--card--body">
+                  <div class="tick--container">
+                    <div class="tbl-highlights mb-2">
+                      <span class="tbl--highlights--icon"
+                        ><i class="fa-solid fa-circle-check"></i
+                      ></span>
+                      <span class="tbl--highlights--text"
+                        >1 Inserat/Unterkunft</span
+                      >
+                    </div>
+                    <div class="tbl-highlights mb-2">
+                      <span class="tbl--highlights--icon"
+                        ><i class="fa-solid fa-circle-check"></i
+                      ></span>
+                      <span class="tbl--highlights--text"
+                        >12 Monate sichtbar</span
+                      >
+                    </div>
+                    <div class="tbl-highlights mb-2">
+                      <span class="tbl--highlights--icon"
+                        ><i class="fa-solid fa-circle-check"></i
+                      ></span>
+                      <span class="tbl--highlights--text">Premium Support</span>
+                    </div>
+                    <div class="tbl-highlights mb-2">
+                      <span class="tbl--highlights--icon"
+                        ><i class="fa-solid fa-circle-check"></i
+                      ></span>
+                      <span class="tbl--highlights--text"
+                        >1 Objekt als Highlight gekennzeichnet</span
+                      >
+                    </div>
+                    <div class="tbl-highlights mb-2">
+                      <span class="tbl--highlights--icon"
+                        ><i class="fa-solid fa-circle-check"></i
+                      ></span>
+                      <span class="tbl--highlights--text"
+                        >1 Objekt mit Website Link</span
+                      >
+                    </div>
+                    <div class="tbl-highlights mb-2">
+                      <span class="tbl--highlights--icon"
+                        ><i class="fa-solid fa-circle-check"></i
+                      ></span>
+                      <span class="tbl--highlights--text"
+                        >jede weitere Unterkunft 5,00 €/mtl.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="price--card--footer">
+                  <button class="btn price--card--footerbtn">
+                    Jetzt buchen
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <h1 class="price--main--head pt-5">Alle Tarife beinhalten:</h1>
+
+            <div class="traffic--include--container mt-5 mb-5">
+              <!-- <div class="back-shadow"></div> -->
+              <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                  <div class="traffic--detail--card">
+                    <div class="traffic--img--container">
+                      <img src="./assets/img/icon/360.svg" alt="" />
+                    </div>
+                    <h6 class="traffic--detail--card--head">
+                      360° Präsentation
+                    </h6>
+                    <span class="traffic--detail--card--para"
+                      >Erstellen Sie problemlos eine optimierte und äußerst
+                      ansprechende Präsentation Ihrer Ferienunterkunft. Dies
+                      beinhaltet auch eine redaktionelle Überprüfung von unserer
+                      Seite.</span
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="traffic--detail--card">
+                    <div class="traffic--img--container">
+                      <img src="./assets/img/icon/event_repeat.svg" alt="" />
+                    </div>
+                    <h6 class="traffic--detail--card--head">
+                      Kalender Synchronisation (iCal)
+                    </h6>
+                    <span class="traffic--detail--card--para"
+                      >Organisieren Sie all Ihre Buchungen zentral und bekommen
+                      Sie lediglich Buchungsanfragen für verfügbare Zeiträume.
+                      Dies bietet maximalen Mehrwert sowohl für Besucher als
+                      auch für Sie.</span
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="traffic--detail--card">
+                    <div class="traffic--img--container">
+                      <img
+                        src="./assets/img/icon/tips_and_updates.svg"
+                        alt=""
+                      />
+                    </div>
+                    <h6 class="traffic--detail--card--head">
+                      Optimierungtipps
+                    </h6>
+                    <span class="traffic--detail--card--para"
+                      >Optimieren Sie Ihre Präsentation schrittweise und in
+                      Ihrem eigenen Tempo, um eine höhere Anzahl an Buchungen zu
+                      erzielen. Zusätzlich erhalten Sie Tipps durch unseren
+                      E-Mail-Newsletter, um die Auslastung weiter zu erhöhen.
+                    </span>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="traffic--detail--card">
+                    <div class="traffic--img--container">
+                      <img src="./assets/img/icon/percent.svg" alt="" />
+                    </div>
+                    <h6 class="traffic--detail--card--head">
+                      Keine Provisionen
+                    </h6>
+                    <span class="traffic--detail--card--para"
+                      >Alle Einnahmen gehen zu 100% vom Gast direkt an Sie. Wir
+                      verrechnen keine Provision, weder von Ihnen, noch vom
+                      Urlaubsgast.</span
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="traffic--detail--card">
+                    <div class="traffic--img--container">
+                      <img src="./assets/img/icon/file--dollar.svg" alt="" />
+                    </div>
+                    <h6 class="traffic--detail--card--head">
+                      Bequeme Verlängerung
+                    </h6>
+                    <span class="traffic--detail--card--para"
+                      >Ihre Präsentation wird automatisch verlängert, sodass Sie
+                      sich um nichts kümmern müssen. Sie haben jederzeit die
+                      Möglichkeit der Kündigung!</span
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="traffic--detail--card">
+                    <div class="traffic--img--container">
+                      <img src="./assets/img/icon/info.svg" alt="" />
+                    </div>
+                    <h6 class="traffic--detail--card--head">
+                      Gastgeber-Magazin
+                    </h6>
+                    <span class="traffic--detail--card--para"
+                      >In unserem exklusiven Gastgeber-Magazin erhalten Sie
+                      Tipps, um Ihre Unterkunft noch attraktiver zu gestalten
+                      sowie mehr Buchungen zu erhalten.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="back-shadow-1"></div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="magazine--container pt-5 position-relative py-5"
+        style="background: #edf7f3"
+      >
+        <div class="content--container">
+          <div class="magazine--content--container pt-2 p-0 position-relative">
+            <div class="po--cta--container mx-auto">
+              <h3 class="po--main--heading mb-4 mt-3">
+                Immer mehr Gastgeber wechseln zu rlp-urlaub.de Jetzt auch Sie?
+              </h3>
+              <p class="po--cta--para mb-4">
+                Unserer Gastgeber:innen erhalten großteils mehr als 50+
+                Buchungsanfragen pro Jahr, und können damit Ihre Auslastung
+                deutlich steigern.
+              </p>
+              <button class="btn po--cta-btn mb-4">
+                Jetzt Tarif auswählen
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="magazine--container pt-5 position-relative">
+        <div class="content--container">
+          <div class="magazine--content--container pt-2 p-0 position-relative">
+            <div class="traffic--include--container mt-3 mb-5">
+              <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                  <div class="traffic--detail--card">
+                    <div class="traffic--img--container">
+                      <img src="./assets/img/icon/globe.svg" alt="" />
+                    </div>
+                    <h6 class="traffic--detail--card--head">
+                      Rheinland-Pfalz - Ihre #1
+                    </h6>
+                    <p class="traffic--detail--card--para">
+                      Mehr als 1 Millionen Suchanfragen pro Jahr gibt es für
+                      Suchbegriffe rundum Urlaubsregionen in Rheinland-Pfalz pro
+                      Jahr!
+                    </p>
+                    <p class="traffic--detail--card--para">
+                      Da diese Zahl kontinuierlich ansteigt, besteht ein hoher
+                      Bedarf an Ferienunterkünften wie Ferienhäusern, Hotels und
+                      Ferienwohnungen.
+                    </p>
+                    <p class="traffic--detail--card--para">
+                      Um eine ausgewogene Balance zwischen der Menge an
+                      Gastgebern und Suchanfragen innerhalb einer Region zu
+                      gewährleisten, garantieren wir jedem einzelnen
+                      überdurchschnittlich hohe Anfrage- und Buchungszahlen..
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="traffic--detail--card">
+                    <div class="traffic--img--container">
+                      <img
+                        src="./assets/img/icon/workspace_premium.svg"
+                        alt=""
+                      />
+                    </div>
+                    <h6 class="traffic--detail--card--head">
+                      Geld-Zurück-Garantie
+                    </h6>
+                    <p class="traffic--detail--card--para">
+                      Die meisten unserer Gastgeber:innen erhalten 50+
+                      Buchungsanfragen pro Jahr.
+                    </p>
+                    <p class="traffic--detail--card--para">
+                      Weil wir uns sicher sind, dass Sie mit unserer Plattform
+                      mehr als nur zufrieden sein werden, bieten wir Ihnen eine
+                      Geld-Zurück-Garantie in den ersten 90 Tagen an.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="traffic--detail--card">
+                    <div class="traffic--img--container">
+                      <img src="./assets/img/icon/forum.svg" alt="" />
+                    </div>
+                    <h6 class="traffic--detail--card--head">
+                      Direkter Draht zu Experten
+                    </h6>
+                    <p class="traffic--detail--card--para">
+                      Da wir selbst eigene Ferienhäuser haben in der Region,
+                      wissen wir, wie wichtig es ist bei Fragen auch die
+                      passende und kompetente Antwort zu Ihrer Anfrage zu
+                      erhalten.
+                    </p>
+                    <p class="traffic--detail--card--para">
+                      Bei uns können Sie sich sicher sein, dass wir alles dafür
+                      tun werden, um Sie nicht nur zufrieden, sondern glücklich
+                      zu stellen!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="magazine--container pt-5 position-relative py-5">
+        <div class="content--container">
+          <div class="magazine--content--container">
+            <h1 class="price--main--head mt-2 mb-5 pt-4">
+              Häufig gestellte Fragen
+            </h1>
+            <div class="row">
+              <div class="accordion">
+                <div class="accordion-item">
+                  <a
+                    >Wie lange dauert es, bis ich die ersten Buchungsanfragen
+                    für meine Unterkunft erhalte?</a
+                  >
+                  <div class="content">
+                    <p>
+                      Dadurch, dass wir neue Unterkünfte für einen begrenzten
+                      Zeitraum direkt auf unserer Startseite bewerben kommen
+                      Buchungsanfragen zügig rein. Von Fall zu Fall ist das
+                      natürlich unterschiedlich, oft sind es nur Tage.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <a>Wie nimmt der Gast Kontakt zu mir auf?</a>
+                  <div class="content">
+                    <p>
+                      Dadurch, dass wir neue Unterkünfte für einen begrenzten
+                      Zeitraum direkt auf unserer Startseite bewerben kommen
+                      Buchungsanfragen zügig rein. Von Fall zu Fall ist das
+                      natürlich unterschiedlich, oft sind es nur Tage.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <a
+                    >Bekomme ich Hilfe, wenn ich mit der Erstellung meiner Seite
+                    nicht zurecht komme?</a
+                  >
+                  <div class="content">
+                    <p>
+                      Dadurch, dass wir neue Unterkünfte für einen begrenzten
+                      Zeitraum direkt auf unserer Startseite bewerben kommen
+                      Buchungsanfragen zügig rein. Von Fall zu Fall ist das
+                      natürlich unterschiedlich, oft sind es nur Tage.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <a
+                    >Gibt es die Möglichkeit, meine Präsentation von Ihnen
+                    erstellen zu lassen?</a
+                  >
+                  <div class="content">
+                    <p>
+                      Dadurch, dass wir neue Unterkünfte für einen begrenzten
+                      Zeitraum direkt auf unserer Startseite bewerben kommen
+                      Buchungsanfragen zügig rein. Von Fall zu Fall ist das
+                      natürlich unterschiedlich, oft sind es nur Tage.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <a
+                    >Wie wird meine Unterkunft auf Ihrer Plattform
+                    präsentiert?</a
+                  >
+                  <div class="content">
+                    <p>
+                      Dadurch, dass wir neue Unterkünfte für einen begrenzten
+                      Zeitraum direkt auf unserer Startseite bewerben kommen
+                      Buchungsanfragen zügig rein. Von Fall zu Fall ist das
+                      natürlich unterschiedlich, oft sind es nur Tage.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <a
+                    >Gibt es noch weitere Werbemöglichkeiten auf
+                    rlp-urlaub.de?</a
+                  >
+                  <div class="content">
+                    <p>
+                      Dadurch, dass wir neue Unterkünfte für einen begrenzten
+                      Zeitraum direkt auf unserer Startseite bewerben kommen
+                      Buchungsanfragen zügig rein. Von Fall zu Fall ist das
+                      natürlich unterschiedlich, oft sind es nur Tage.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <a
+                    >Sehe ich Statistiken zu meiner Unterkunft im
+                    Gastgeber-Bereich?</a
+                  >
+                  <div class="content">
+                    <p>
+                      Dadurch, dass wir neue Unterkünfte für einen begrenzten
+                      Zeitraum direkt auf unserer Startseite bewerben kommen
+                      Buchungsanfragen zügig rein. Von Fall zu Fall ist das
+                      natürlich unterschiedlich, oft sind es nur Tage.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <a
+                    >Was ist, wenn ich weitere Unterkünfte listen lassen
+                    will?</a
+                  >
+                  <div class="content">
+                    <p>
+                      Dadurch, dass wir neue Unterkünfte für einen begrenzten
+                      Zeitraum direkt auf unserer Startseite bewerben kommen
+                      Buchungsanfragen zügig rein. Von Fall zu Fall ist das
+                      natürlich unterschiedlich, oft sind es nur Tage.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="magazine--container pt-5 position-relative py-5"
+        style="background: #edf7f3"
+      >
+        <div class="content--container">
+          <div class="magazine--content--container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="w-100 text-center">
+                  <img src="./assets/img/icon/globe.svg" class="mb-3" alt="" />
+                  <p class="sales--card--text">
+                    Mehr als 10.000 Besucher pro Monat auf unserer Plattform,
+                    die nach Unterkünften suchen
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="w-100 text-center">
+                  <img src="./assets/img/icon/dog.svg" class="mb-3" alt="" />
+                  <p class="sales--card--text">
+                    Auszeichnung als verifzierter Gastgeber und Unterkunft, die
+                    für mehr Vertrauen sorgt
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="w-100 text-center">
+                  <img
+                    src="./assets/img/icon/number--1.svg "
+                    class="mb-3"
+                    alt=""
+                  />
+                  <p class="sales--card--text">
+                    # Nummer 1 bei Google zu zahlreichen Suchbegriffen für
+                    Rheinland-Pfalz Urlaubssuchende
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- start of Footer -->
+
+      <section class="dash--footer d-none">
+        <div class="footer--content">
+          <div class="footer--copyright--section">
+            <div class="footer--copyright--link">
+              <ul>
+                <li class="mx-3 footer--text--green">Impressum</li>
+
+                <li class="mx-3 footer--text--green">Datenschutz</li>
+
+                <li class="mx-3 footer--text--green">Haftungsausschluss</li>
+
+                <li class="mx-3 footer--text--green">Support</li>
+              </ul>
+            </div>
+
+            <div>
+              <span class="copyright footer--text--green"
+                >© Copyright 2023, All Rights Reserved</span
+              >
+            </div>
+          </div>
+          <span class="footer--copyRights"></span>
+        </div>
+      </section>
+
+      <!-- End of Footer -->
+    </div>
+
+    <!-- Jquery Cdn -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap JS -->
+
+    <script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Swipper Js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- chosen JS -->
+
+    <script src="./assets/plugins/chosen/chosen.js"></script>
+
+    <!-- Custom JS -->
+
+    <script src="./assets/script/script.js"></script>
+
+    <script>
+      // Dropdown
+      $(document).ready(function () {
+        $('.navbar .dropdown').hover(
+          function () {
+            $(this)
+              .find('.dropdown-menu')
+              .first()
+              .stop(true, true)
+              .slideDown(150);
+          },
+          function () {
+            $(this)
+              .find('.dropdown-menu')
+              .first()
+              .stop(true, true)
+              .slideUp(105);
+          }
+        );
+      });
+
+      const items = document.querySelectorAll('.accordion a');
+
+      function toggleAccordion() {
+        this.classList.toggle('active');
+        this.nextElementSibling.classList.toggle('active');
+      }
+
+      items.forEach((item) => item.addEventListener('click', toggleAccordion));
+    </script>
+  </body>
+</html>
