@@ -33,7 +33,7 @@
           </div>
           <div class="menu-list">
             <ul id="menu-content" class="menu-content">
-              <li class="active">
+              <li>
                 <a href="#">
                   <img
                     src="./assets/img/icon/basic-info.svg"
@@ -42,6 +42,13 @@
                   />
 
                   Basis Informationen
+                </a>
+              </li>
+              <li class="active">
+                <a href="#">
+                  <img src="./assets/img/icon/loca.svg" class="mx-3" alt="" />
+
+                  Lage
                 </a>
               </li>
 
@@ -149,50 +156,38 @@
                   </h1>
 
                   <div class="list--form--container">
-                    <h4 class="list--head mt-3">Basis Informationen</h4>
+                    <h4 class="list--head mt-3">Lage</h4>
                     <form action="">
                       <div>
                         <label class="list--labels"
-                          >Titel (max. 90 Zeichen)</label
+                          >Straße und Hausnummer</label
                         >
                         <input
                           type="text"
                           class="list--lg--input"
                           name="text"
-                          placeholder="Test Titel Test TitelTest TitelTest TitelTe-Böhl-Iggelheim"
+                          placeholder="Anne-Frank-Str. 12a"
+                        />
+                      </div>
+                      <div>
+                        <label class="list--labels">Postleitzahl</label>
+                        <input
+                          type="text"
+                          class="list--md--input"
+                          name="text"
+                          placeholder="67459"
+                        />
+                      </div>
+                      <div>
+                        <label class="list--labels">Ort</label>
+                        <input
+                          type="text"
+                          class="list--md--input"
+                          name="text"
+                          placeholder="Böhl-Iggelheim"
                         />
                       </div>
 
-                      <div class="">
-                        <label class="list--labels">Region</label>
-                        <select name="Region" class="list--md--select">
-                          <option selected="">Pfalz</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                      <div class="">
-                        <label class="list--labels">Unterregion</label>
-                        <select name="Unterregion" class="list--md--select">
-                          <option selected="">Rhein - Pfalz</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                      <div class="">
-                        <label class="list--labels">Unterkunftskategorie</label>
-                        <select
-                          name="Unterkunftskategorie"
-                          class="list--md--select"
-                        >
-                          <option selected="">Farienhaus</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
                       <div>
                         <button type="submit" class="list--btn mt-4">
                           Weiter
@@ -206,6 +201,7 @@
           </div>
         </div>
       </div>
+
       <!-- Dashboard Main -->
     </div>
 
